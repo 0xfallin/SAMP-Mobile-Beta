@@ -4,7 +4,7 @@ android {
     compileSdkVersion 34
 
     defaultConfig {
-        applicationId "ro.samp.mobile"
+        applicationId "com.samp.mobile"
         minSdkVersion 24
         targetSdkVersion 34
         versionCode 1
