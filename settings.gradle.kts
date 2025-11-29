@@ -10,5 +10,5 @@ plugins {
     id("org.gradle.toolchains.foojay-resolver-convention") version "1.0.0"
 }
 
-rootProject.name = "SA-MP Mobile Lauuncher"
+rootProject.name = "SAMP-Mobile-Beta"
 include("app")
