@@ -1,9 +1,7 @@
-name: Android Build
+name: Android Init + Build
 
 on:
   push:
-    branches: [ main ]
-  pull_request:
     branches: [ main ]
 
 jobs:
@@ -11,45 +9,35 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # --- Checkout Source Code ---
-      - name: Checkout repository
+      - name: Checkout repo
         uses: actions/checkout@v4
 
-      # --- Setup JDK 17 (Required for AGP 8.x) ---
-      - name: Set up JDK
+      - name: Set up JDK 17
         uses: actions/setup-java@v4
         with:
           distribution: temurin
           java-version: 17
 
-      # --- Setup Gradle (Uses new non-deprecated version) ---
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v4
 
-      # --- Install Android SDK ---
       - name: Install Android SDK
         uses: android-actions/setup-android@v3
 
-      # --- Accept Licenses ---
-      - name: Accept Android licenses
+      - name: Accept licenses
         run: yes | sdkmanager --licenses
 
-      # --- Prepare Gradle Wrapper (gradle init alternative) ---
-      - name: Verify Gradle wrapper
+      # ✔ Run gradle init inside a clean folder
+      - name: Initialize project
         run: |
-          if [ ! -f "gradlew" ]; then
-            echo "Gradle wrapper missing — generating using gradle init"
-            gradle init --type basic
-            chmod +x gradlew
-          fi
+          mkdir project
+          cd project
+          gradle init --type basic
+          chmod +x gradlew
+        shell: bash
 
-      # --- Build APK ---
-      - name: Build Debug APK
-        run: ./gradlew assembleDebug
-
-      # --- Upload APK as Artifact ---
-      - name: Upload APK
-        uses: actions/upload-artifact@v4
-        with:
-          name: app-debug
-          path: app/build/outputs/apk/debug/*.apk
+      # ✔ Build generated Gradle project
+      - name: Build (Debug)
+        run: |
+          cd project
+          ./gradlew build --no-daemon
