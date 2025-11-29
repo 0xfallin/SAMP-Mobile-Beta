@@ -1,18 +1,23 @@
-name: Android Init + Build
+name: Gradle Init Commit
 
 on:
-  push:
-    branches: [ main ]
+  workflow_dispatch:   # Run manually
 
 jobs:
-  build:
+  init:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # Needed for pushing
 
-      - name: Set up JDK 17
+      - name: Remove all existing files (except .git)
+        run: |
+          find . -mindepth 1 -maxdepth 1 ! -name ".git" -exec rm -rf {} \;
+
+      - name: Set up JDK
         uses: actions/setup-java@v4
         with:
           distribution: temurin
@@ -21,23 +26,17 @@ jobs:
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v4
 
-      - name: Install Android SDK
-        uses: android-actions/setup-android@v3
-
-      - name: Accept licenses
-        run: yes | sdkmanager --licenses
-
-      # ✔ Run gradle init inside a clean folder
-      - name: Initialize project
+      - name: Run gradle init
         run: |
-          mkdir project
-          cd project
           gradle init --type basic
           chmod +x gradlew
-        shell: bash
 
-      # ✔ Build generated Gradle project
-      - name: Build (Debug)
+      - name: Commit changes
         run: |
-          cd project
-          ./gradlew build --no-daemon
+          git config --global user.name "0xfallin"
+          git config --global user.email "0xfallin@github.com"
+          git add .
+          git commit -m "Initialize Gradle project"
+
+      - name: Push changes
+        run: git push

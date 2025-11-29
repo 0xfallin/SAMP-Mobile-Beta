@@ -1,55 +1,42 @@
-name: Android Build
+name: Gradle Init Commit
 
 on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+  workflow_dispatch:   # Run manually
 
 jobs:
-  build:
+  init:
     runs-on: ubuntu-latest
 
     steps:
-      # --- Checkout Source Code ---
-      - name: Checkout repository
+      - name: Checkout repo
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # Needed for pushing
 
-      # --- Setup JDK 17 (Required for AGP 8.x) ---
+      - name: Remove all existing files (except .git)
+        run: |
+          find . -mindepth 1 -maxdepth 1 ! -name ".git" -exec rm -rf {} \;
+
       - name: Set up JDK
         uses: actions/setup-java@v4
         with:
           distribution: temurin
           java-version: 17
 
-      # --- Setup Gradle (Uses new non-deprecated version) ---
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v4
 
-      # --- Install Android SDK ---
-      - name: Install Android SDK
-        uses: android-actions/setup-android@v3
-
-      # --- Accept Licenses ---
-      - name: Accept Android licenses
-        run: yes | sdkmanager --licenses
-
-      # --- Prepare Gradle Wrapper (gradle init alternative) ---
-      - name: Verify Gradle wrapper
+      - name: Run gradle init
         run: |
-          if [ ! -f "gradlew" ]; then
-            echo "Gradle wrapper missing — generating using gradle init"
-            gradle init --type basic
-            chmod +x gradlew
-          fi
+          gradle init --type basic
+          chmod +x gradlew
 
-      # --- Build APK ---
-      - name: Build Debug APK
-        run: ./gradlew assembleDebug
+      - name: Commit changes
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add .
+          git commit -m "Initialize Gradle project"
 
-      # --- Upload APK as Artifact ---
-      - name: Upload APK
-        uses: actions/upload-artifact@v4
-        with:
-          name: app-debug
-          path: app/build/outputs/apk/debug/*.apk
+      - name: Push changes
+        run: git push
