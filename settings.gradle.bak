@@ -11,4 +11,4 @@ plugins {
 }
 
 rootProject.name = 'SAMP-Mobile-Beta'
-include(':app')
+include('app')
