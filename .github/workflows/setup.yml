@@ -46,7 +46,7 @@ jobs:
           restore-keys: gradle-${{ runner.os }}-
 
       - name: Build APK (debug)
-        run: ./gradlew assembleDebug --stacktrace
+        run: ./gradlew :app:assembleDebug --stacktrace
 
       - name: Upload APK artifact
         uses: actions/upload-artifact@v4
