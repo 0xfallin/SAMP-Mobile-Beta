@@ -1,23 +1,19 @@
-name: Gradle Init Commit
+name: Android Init + Build + Push
 
 on:
-  workflow_dispatch:   # Run manually
+  workflow_dispatch:   # run manually (safer)
 
 jobs:
-  init:
+  build:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0   # Needed for pushing
+          fetch-depth: 0   # needed for pushing commits
 
-      - name: Remove all existing files (except .git)
-        run: |
-          find . -mindepth 1 -maxdepth 1 ! -name ".git" -exec rm -rf {} \;
-
-      - name: Set up JDK
+      - name: Set up JDK 17
         uses: actions/setup-java@v4
         with:
           distribution: temurin
@@ -26,17 +22,42 @@ jobs:
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v4
 
-      - name: Run gradle init
+      - name: Install Android SDK
+        uses: android-actions/setup-android@v3
+
+      - name: Accept licenses
+        run: yes | sdkmanager --licenses
+
+      # -------------------------------
+      # Gradle Init inside "project"
+      # -------------------------------
+      - name: Initialize project
         run: |
+          rm -rf project
+          mkdir project
+          cd project
           gradle init --type basic
           chmod +x gradlew
 
-      - name: Commit changes
+      # -------------------------------
+      # Build
+      # -------------------------------
+      - name: Build (Debug)
         run: |
-          git config --global user.name "0xfallin"
-          git config --global user.email "0xfallin@github.com"
-          git add .
-          git commit -m "Initialize Gradle project"
+          cd project
+          ./gradlew build --no-daemon
 
-      - name: Push changes
-        run: git push
+      # -------------------------------
+      # Commit + Push back to repo
+      # -------------------------------
+      - name: Commit and Push
+        run: |
+          cp -r project/* ./
+
+          git config --global user.name "0xfallin"
+          git config --global user.email "johncedd15@gmail.com"
+
+          git add .
+          git commit -m "Add Gradle initialized project" || echo "No changes to commit"
+
+          git push
