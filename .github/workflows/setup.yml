@@ -12,43 +12,34 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
+      # 1. Checkout the repo
+      - name: Checkout repository
         uses: actions/checkout@v3
 
+      # 2. Set up JDK 17
       - name: Set up JDK
         uses: actions/setup-java@v3
         with:
-          distribution: 'temurin'
-          java-version: '17'
+          distribution: temurin
+          java-version: 17
 
-      - name: Set up Android SDK
-        id: setup-android
-        uses: android-actions/setup-android@v2
-        with:
-          api-level: 33
-          build-tools: 33.0.2
-          ndk: 26.2.11394342
-          cmake: 3.22.1
-
-      - name: Install build tools
-        run: sudo apt-get update && sudo apt-get install -y clang ninja-build build-essential
-
-      - name: Make Gradle Wrapper executable
-        run: chmod +x ./gradlew
-
-      - name: Cache Gradle
+      # 3. Cache Gradle dependencies
+      - name: Cache Gradle packages
         uses: actions/cache@v3
         with:
           path: |
             ~/.gradle/caches
-            ~/.gradle/wrapper
-          key: gradle-${{ runner.os }}-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
-          restore-keys: gradle-${{ runner.os }}-
+            ~/.gradle/wrapper/
+          key: gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
+          restore-keys: |
+            gradle-
 
-      - name: Build APK (debug)
-        run: ./gradlew :app:assembleDebug --stacktrace
+      # 4. Run Gradle build
+      - name: Build APK
+        run: ./gradlew assembleDebug --no-daemon
 
-      - name: Upload APK artifact
+      # 5. Upload APK as artifact
+      - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
           name: app-debug-apk
