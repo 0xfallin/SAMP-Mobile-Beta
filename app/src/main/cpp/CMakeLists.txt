@@ -1,10 +1,12 @@
-cmake_minimum_required(VERSION 3.10.2)
+cmake_minimum_required(VERSION 3.6)  # r14b supports older CMake
 project(samp)
 
-set(CMAKE_CXX_STANDARD 17)
+# Use C++11 instead of C++17 for r14b compatibility
+set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
 
-# Always define Android macros
+# Define Android macros
 add_definitions(-DANDROID -D__ANDROID__)
 
 # ---- ABI DETECTION ----
@@ -17,7 +19,6 @@ elseif("${ANDROID_ABI}" STREQUAL "arm64-v8a")
 endif()
 
 # ---- SOURCE FILES ----
-# Automatically include EVERYTHING inside cpp/** recursively
 file(GLOB_RECURSE ALL_SRC
     "${CMAKE_SOURCE_DIR}/*.cpp"
     "${CMAKE_SOURCE_DIR}/*.c"
@@ -51,7 +52,7 @@ target_include_directories(
     ${CMAKE_SOURCE_DIR}/vendor
     ${CMAKE_SOURCE_DIR}/vendor/hash
     ${CMAKE_SOURCE_DIR}/vendor/imgui
-    "${CMAKE_SOURCE_DIR}/vendor/imgui vechi"   # FIXED: quotes added
+    "${CMAKE_SOURCE_DIR}/vendor/imgui vechi"
     ${CMAKE_SOURCE_DIR}/vendor/inih
     ${CMAKE_SOURCE_DIR}/vendor/raknet
     ${CMAKE_SOURCE_DIR}/vendor/raknet/SAMP
@@ -72,3 +73,13 @@ target_link_libraries(
     ${egl-lib}
     m
 )
+
+# ---- OPTIONAL: Disable some warnings in GCC r14b ----
+if(CMAKE_CXX_COMPILER_ID STREQUAL "GNU")
+    target_compile_options(samp PRIVATE
+        -Wno-register        # register keyword warning
+        -Wno-c++11-compat    # ignore some compatibility warnings
+        -Wno-unused-variable
+        -Wno-unused-parameter
+    )
+endif()
