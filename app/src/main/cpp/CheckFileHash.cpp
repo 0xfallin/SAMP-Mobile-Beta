@@ -94,4 +94,5 @@ bool CheckFile(mdFile* mdChkFile)
 
 	fclose(fLocalFile);
 	return true;
+
 }
