@@ -18,9 +18,6 @@ public class MainActivity extends AppCompatActivity {
 
         fileLogger = new FileLogger(this, "samp_logs.txt");
 
-        tvStatus = findViewById(R.id.tv_title);
-        tvStatus.setText("Loading native libraries...");
-
         fileLogger.log("MainActivity started");
         Log.d(TAG, "MainActivity started");
 
