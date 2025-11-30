@@ -27,10 +27,10 @@ jobs:
       - name: Setup Android SDK
         uses: android-actions/setup-android@v2
         with:
-          api-level: 34
-          ndk-version: 26.2.1
-          cmake-version: 3.22.1
-          build-tools: 34.0.0
+          api-level: 30
+          ndk-version: 14.1.3816874  # Exact r14b version
+          cmake-version: 3.6.3155560 # Compatible with r14b
+          build-tools: 28.0.3
 
       # 4. Cache Gradle dependencies
       - name: Cache Gradle packages
