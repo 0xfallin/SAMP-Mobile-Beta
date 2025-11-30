@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # 1. Checkout repository
+      # 1. Checkout the repo
       - name: Checkout repository
         uses: actions/checkout@v3
 
@@ -23,16 +23,7 @@ jobs:
           distribution: temurin
           java-version: 17
 
-      # 3. Install Android SDK, NDK, and CMake
-      - name: Setup Android SDK
-        uses: android-actions/setup-android@v2
-        with:
-          api-level: 30
-          ndk-version: 14.1.3816874  # Exact r14b version
-          cmake-version: 3.6.3155560 # Compatible with r14b
-          build-tools: 28.0.3
-
-      # 4. Cache Gradle dependencies
+      # 3. Cache Gradle dependencies
       - name: Cache Gradle packages
         uses: actions/cache@v3
         with:
@@ -42,16 +33,16 @@ jobs:
           key: gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
           restore-keys: |
             gradle-
-
-      # 5. Make Gradle Wrapper executable
+    
+      # 4. Set Permission to gradlew
       - name: Make Gradle Wrapper executable
         run: chmod +x ./gradlew
 
-      # 6. Clean and build APK (with CMake)
+      # 5. Run Gradle build
       - name: Build APK
-        run: ./gradlew clean :app:assembleDebug --stacktrace
+        run: ./gradlew clean :app:assembleDebug
 
-      # 7. Upload APK as artifact
+      # 6. Upload APK as artifact
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:

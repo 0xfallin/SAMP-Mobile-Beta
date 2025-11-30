@@ -15,21 +15,8 @@ android {
             // only 32-bit
             abiFilters "armeabi-v7a"
         }
-
-        externalNativeBuild {
-            cmake {
-                // Use C++11 for r14b compatibility
-                cppFlags "-std=c++11 -frtti -fexceptions"
-            }
-        }
     }
     
-    externalNativeBuild {
-        cmake {
-            path "src/main/cpp/CMakeLists.txt"
-        }
-    }
-
     buildTypes {
         debug {
             minifyEnabled false
@@ -37,14 +24,6 @@ android {
         release {
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-        }
-    }
-
-    // Point CMake to your native code
-    externalNativeBuild {
-        cmake {
-            path file("src/main/cpp/CMakeLists.txt")
-            version "3.22.1"
         }
     }
 
