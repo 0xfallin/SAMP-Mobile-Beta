@@ -21,12 +21,18 @@ jobs:
           distribution: temurin
           java-version: 17
 
-      # Install cmake manually because Android checks system PATH
-      - name: Install CMake
+      # 📌 Install FULL CMake package explicitly
+      - name: Install CMake 3.22
         run: |
-          sudo apt-get update
-          sudo apt-get install -y cmake
-          cmake --version
+          wget https://github.com/Kitware/CMake/releases/download/v3.22.0/cmake-3.22.0-linux-x86_64.tar.gz
+          tar -xzf cmake-3.22.0-linux-x86_64.tar.gz
+          mv cmake-3.22.0-linux-x86_64 $HOME/cmake
+          echo "Installed CMake under $HOME/cmake"
+          $HOME/cmake/bin/cmake --version
+
+      # 📌 Tell Gradle to use our official CMake folder
+      - name: Configure CMake path
+        run: echo "cmake.dir=$HOME/cmake" >> local.properties
 
       # Cache Gradle
       - name: Cache Gradle packages
@@ -36,18 +42,13 @@ jobs:
             ~/.gradle/caches
             ~/.gradle/wrapper/
           key: gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
-          restore-keys: |
-            gradle-
+          restore-keys: gradle-
 
-      # Tell Gradle where cmake is installed
-      - name: Export CMake Path
-        run: echo "cmake.dir=/usr/bin" >> ./local.properties
-
-      - name: Make Gradle wrapper executable
+      - name: Make Gradle Wrapper executable
         run: chmod +x ./gradlew
 
       - name: Build APK
-        run: ./gradlew clean :app:assembleDebug
+        run: ./gradlew clean :app:assembleDebug --warning-mode all
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
