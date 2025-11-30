@@ -1,29 +1,46 @@
 package ro.samp.mobile;
 
 import android.os.Bundle;
+import android.util.Log;
 import androidx.appcompat.app.AppCompatActivity;
 import android.widget.TextView;
-import android.widget.LinearLayout;
-import android.view.Gravity;
-import android.graphics.Color;
 
 public class MainActivity extends AppCompatActivity {
+
+    private static final String TAG = "SAMPLauncher";
+    private FileLogger fileLogger;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
 
-        // Minimal programmatic layout to avoid XML issues
-        LinearLayout layout = new LinearLayout(this);
-        layout.setOrientation(LinearLayout.VERTICAL);
-        layout.setGravity(Gravity.CENTER);
-        layout.setBackgroundColor(Color.WHITE);
+        // Initialize file logger
+        fileLogger = new FileLogger(this, "samp_logs.txt");
 
-        TextView tv = new TextView(this);
-        tv.setText("SAMP Mobile Launcher");
-        tv.setTextSize(24f);
-        tv.setTextColor(Color.BLACK);
+        // Load native libraries and log to file
+        loadLibraryWithLog("GTASA"); // loads libGTASA.so
+        loadLibraryWithLog("samp");  // loads libsamp.so
 
-        layout.addView(tv);
-        setContentView(layout);
+        fileLogger.log("MainActivity created successfully");
     }
+
+    /**
+     * Helper method to load native libraries and log success/failure
+     */
+    private void loadLibraryWithLog(String libName) {
+        try {
+            System.loadLibrary(libName);
+            String msg = libName + ".so loaded successfully";
+            Log.d(TAG, msg);
+            fileLogger.log(msg);
+        } catch (UnsatisfiedLinkError e) {
+            String msg = "Failed to load " + libName + ".so: " + e.getMessage();
+            Log.e(TAG, msg, e);
+            fileLogger.log(msg);
+        }
+    }
+
+    // Example native function
+    public native void initSamp();
 }
