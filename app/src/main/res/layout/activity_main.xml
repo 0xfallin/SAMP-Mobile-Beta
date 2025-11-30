@@ -1,42 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:padding="24dp"
+    android:id="@+id/main_layout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#FFFFFF"
+    android:padding="24dp">
 
-    <EditText
-        android:id="@+id/nickEdit"
-        android:hint="Nickname"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-
-    <EditText
-        android:id="@+id/ipEdit"
-        android:hint="Server IP"
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="text"/>
+        android:text="SAMP Mobile Launcher"
+        android:textSize="22sp"
+        android:textColor="#000"/>
 
-    <EditText
-        android:id="@+id/portEdit"
-        android:hint="Port"
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="number"/>
-
-    <EditText
-        android:id="@+id/passwordEdit"
-        android:hint="Password"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="textPassword"/>
-
-    <Button
-        android:id="@+id/connectBtn"
-        android:text="Connect"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:text="Status: idle"
         android:layout_marginTop="16dp"/>
 
 </LinearLayout>

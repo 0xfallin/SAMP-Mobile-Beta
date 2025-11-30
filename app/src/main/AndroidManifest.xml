@@ -1,21 +1,22 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="ro.samp.mobile"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="33"/>
 
     <application
         android:allowBackup="true"
-        android:label="SA-MP Mobile"
-        android:icon="@mipmap/ic_launcher"
-        android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true"
-        android:theme="@style/Theme.SAMP">
-
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
+        android:extractNativeLibs="true"
+        android:label="SAMP Mobile Launcher"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <!-- Use a normal Activity UI because the launcher uses native loader -->
+        <activity android:name=".MainActivity"
+            android:exported="true"
+            android:configChanges="orientation|keyboardHidden|screenSize">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-
     </application>
 </manifest>

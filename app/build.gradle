@@ -12,24 +12,44 @@ android {
         versionName "1.0"
 
         ndk {
-            // only 32-bit
+            // SA-MP Mobile uses ONLY 32-bit libs
             abiFilters "armeabi-v7a"
         }
+
+        externalNativeBuild {
+            cmake {
+                cppFlags "-std=c11"
+            }
+        }
     }
-    
+
     buildTypes {
         debug {
             minifyEnabled false
         }
+
         release {
-            minifyEnabled true
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            minifyEnabled false   // MUST BE DISABLED or SA-MP native libs crash
+            shrinkResources false
         }
     }
 
-    // Fix for native library conflicts
+    // REQUIRED OR .so CANNOT LOAD
     packagingOptions {
-        jniLibs.pickFirsts += ['**/*.so']
+        jniLibs.useLegacyPackaging true
+    }
+
+    externalNativeBuild {
+        cmake {
+            path "CMakeLists.txt"
+            version "3.10.2"
+        }
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['src/main/jniLibs']
+        }
     }
 }
 
