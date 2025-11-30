@@ -1,38 +1,29 @@
 package ro.samp.mobile;
 
 import android.os.Bundle;
-import android.widget.Button;
-import android.widget.EditText;
 import androidx.appcompat.app.AppCompatActivity;
+import android.widget.TextView;
+import android.widget.LinearLayout;
+import android.view.Gravity;
+import android.graphics.Color;
 
 public class MainActivity extends AppCompatActivity {
-
-    SAMPLauncher sampLauncher;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
 
-        sampLauncher = new SAMPLauncher();
+        // Minimal programmatic layout to avoid XML issues
+        LinearLayout layout = new LinearLayout(this);
+        layout.setOrientation(LinearLayout.VERTICAL);
+        layout.setGravity(Gravity.CENTER);
+        layout.setBackgroundColor(Color.WHITE);
 
-        EditText nickEdit = findViewById(R.id.nickEdit);
-        EditText ipEdit = findViewById(R.id.ipEdit);
-        EditText portEdit = findViewById(R.id.portEdit);
-        EditText passwordEdit = findViewById(R.id.passwordEdit);
-        Button connectBtn = findViewById(R.id.connectBtn);
+        TextView tv = new TextView(this);
+        tv.setText("SAMP Mobile Launcher");
+        tv.setTextSize(24f);
+        tv.setTextColor(Color.BLACK);
 
-        connectBtn.setOnClickListener(v -> {
-            String nick = nickEdit.getText().toString();
-            String ip = ipEdit.getText().toString();
-            int port = Integer.parseInt(portEdit.getText().toString());
-            String pass = passwordEdit.getText().toString();
-
-            sampLauncher.setNick(nick);
-            sampLauncher.setServerIP(ip);
-            sampLauncher.setPort(port);
-            sampLauncher.setPassword(pass);
-            sampLauncher.connect();
-        });
+        layout.addView(tv);
+        setContentView(layout);
     }
 }

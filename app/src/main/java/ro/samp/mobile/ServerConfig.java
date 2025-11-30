@@ -1,7 +1,0 @@
-package ro.samp.mobile;
-
-public class ServerConfig {
-    public static String USER_NAME = "Juan_Cruz";
-    public static String SERVER_IP = "127.0.0.1";
-    public static int SERVER_PORT = 7777;
-}
