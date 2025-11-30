@@ -9,20 +9,32 @@ public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = "SAMPLauncher";
     private FileLogger fileLogger;
+    private TextView tvStatus;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Initialize file logger
         fileLogger = new FileLogger(this, "samp_logs.txt");
 
-        // Load native libraries and log to file
-        loadLibraryWithLog("GTASA"); // loads libGTASA.so
-        loadLibraryWithLog("samp");  // loads libsamp.so
+        tvStatus = findViewById(R.id.tv_title);
+        tvStatus.setText("Loading native libraries...");
 
-        fileLogger.log("MainActivity created successfully");
+        fileLogger.log("MainActivity started");
+        Log.d(TAG, "MainActivity started");
+
+        // Load libs in background to avoid UI freeze
+        new Thread(() -> {
+            loadLibraryWithLog("GTASA");  // loads libGTASA.so
+            loadLibraryWithLog("samp");   // loads libsamp.so
+
+            fileLogger.log("All libs loaded (background thread)");
+            Log.d(TAG, "All libs loaded (background thread)");
+
+            // Update UI after loading
+            runOnUiThread(() -> tvStatus.setText("SAMP Mobile Launcher Ready"));
+        }).start();
     }
 
     /**
@@ -31,11 +43,11 @@ public class MainActivity extends AppCompatActivity {
     private void loadLibraryWithLog(String libName) {
         try {
             System.loadLibrary(libName);
-            String msg = libName + ".so loaded successfully";
+            String msg = "Loaded lib: " + libName + ".so";
             Log.d(TAG, msg);
             fileLogger.log(msg);
         } catch (UnsatisfiedLinkError e) {
-            String msg = "Failed to load " + libName + ".so: " + e.getMessage();
+            String msg = "FAILED to load " + libName + ".so → " + e.getMessage();
             Log.e(TAG, msg, e);
             fileLogger.log(msg);
         }
