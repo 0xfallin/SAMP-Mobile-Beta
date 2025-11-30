@@ -187,3 +187,37 @@ void CCustomServer::Render()
 
 	ImGui::PopStyleVar();
 }
+
+JNIEXPORT void JNICALL
+Java_ro_samp_mobile_SAMPLauncher_setNick(JNIEnv* env, jobject thiz, jstring nick)
+{
+    const char* cstr = env->GetStringUTFChars(nick, nullptr);
+    strncpy(szNickInputBuffer, cstr, sizeof(szNickInputBuffer)-1);
+    cp1251_to_utf8(utf8NickInputBuffer, cstr);
+    env->ReleaseStringUTFChars(nick, cstr);
+}
+
+JNIEXPORT void JNICALL
+Java_ro_samp_mobile_SAMPLauncher_setIP(JNIEnv* env, jobject thiz, jstring ip)
+{
+    const char* cstr = env->GetStringUTFChars(ip, nullptr);
+    strncpy(szIPInputBuffer, cstr, sizeof(szIPInputBuffer)-1);
+    cp1251_to_utf8(utf8IPInputBuffer, cstr);
+    env->ReleaseStringUTFChars(ip, cstr);
+}
+
+JNIEXPORT void JNICALL
+Java_ro_samp_mobile_SAMPLauncher_setPort(JNIEnv* env, jobject thiz, jint port)
+{
+    snprintf(szPortInputBuffer, sizeof(szPortInputBuffer), "%d", port);
+    snprintf(utf8PortInputBuffer, sizeof(utf8PortInputBuffer), "%d", port);
+}
+
+JNIEXPORT void JNICALL
+Java_ro_samp_mobile_SAMPLauncher_setPassword(JNIEnv* env, jobject thiz, jstring pass)
+{
+    const char* cstr = env->GetStringUTFChars(pass, nullptr);
+    strncpy(szPasswordInputBuffer, cstr, sizeof(szPasswordInputBuffer)-1);
+    cp1251_to_utf8(utf8PasswordInputBuffer, cstr);
+    env->ReleaseStringUTFChars(pass, cstr);
+}
