@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.10.2)
 project(native_loader)
 
-add_library(native_loader SHARED src/main/cpp/native_loader.c)
+add_library(native_loader SHARED native_loader.c)
 
 find_library(log-lib log)
 
