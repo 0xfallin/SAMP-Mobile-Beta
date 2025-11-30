@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      ANDROID_SDK_ROOT: ${{ runner.tool_cache }}/android-sdk
+      ANDROID_SDK_ROOT: ${{ env.RUNNER_TOOL_CACHE }}/android-sdk
 
     steps:
       # 1. Checkout repository
