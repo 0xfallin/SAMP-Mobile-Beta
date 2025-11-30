@@ -1,6 +1,7 @@
 apply plugin: 'com.android.application'
 
 android {
+    namespace "ro.samp.mobile"
     compileSdkVersion 34
 
     defaultConfig {
@@ -9,6 +10,13 @@ android {
         targetSdkVersion 34
         versionCode 1
         versionName "1.0"
+
+        // Enable CMake native library
+        externalNativeBuild {
+            cmake {
+                cppFlags "-std=c++17 -frtti -fexceptions"
+            }
+        }
     }
 
     buildTypes {
@@ -19,6 +27,17 @@ android {
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+    }
+
+    externalNativeBuild {
+        cmake {
+            path "src/main/cpp/CMakeLists.txt" // path to your CMakeLists.txt
+        }
+    }
+
+    // Optional: packaging options for native libs
+    packagingOptions {
+        pickFirst '**/*.so'
     }
 }
 
