@@ -5,7 +5,8 @@
         android:label="SA-MP Mobile"
         android:icon="@mipmap/ic_launcher"
         android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true">
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SAMP">
 
         <activity
             android:name=".MainActivity"
