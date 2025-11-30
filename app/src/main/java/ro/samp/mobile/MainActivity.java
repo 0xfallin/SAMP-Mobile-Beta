@@ -1,32 +1,38 @@
 package ro.samp.mobile;
 
 import android.os.Bundle;
-import androidx.appcompat.app.AppCompatActivity;
-import android.widget.TextView;
 import android.widget.Button;
-import android.widget.Toast;
+import android.widget.EditText;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
+
+    SAMPLauncher sampLauncher;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        TextView userName = findViewById(R.id.userName);
-        TextView serverIpPort = findViewById(R.id.serverIpPort);
-        Button connectButton = findViewById(R.id.connectButton);
+        sampLauncher = new SAMPLauncher();
 
-        // Set server info from ServerConfig
-        userName.setText(ServerConfig.USER_NAME);
-        serverIpPort.setText(ServerConfig.SERVER_IP + ":" + ServerConfig.SERVER_PORT);
+        EditText nickEdit = findViewById(R.id.nickEdit);
+        EditText ipEdit = findViewById(R.id.ipEdit);
+        EditText portEdit = findViewById(R.id.portEdit);
+        EditText passwordEdit = findViewById(R.id.passwordEdit);
+        Button connectBtn = findViewById(R.id.connectBtn);
 
-        connectButton.setOnClickListener(v -> {
-            // For now, just show a toast
-            Toast.makeText(this,
-                    "Connecting to " + ServerConfig.SERVER_IP + ":" + ServerConfig.SERVER_PORT,
-                    Toast.LENGTH_SHORT).show();
+        connectBtn.setOnClickListener(v -> {
+            String nick = nickEdit.getText().toString();
+            String ip = ipEdit.getText().toString();
+            int port = Integer.parseInt(portEdit.getText().toString());
+            String pass = passwordEdit.getText().toString();
 
-            // TODO: Integrate SAMP connection logic here
+            sampLauncher.setNick(nick);
+            sampLauncher.setServerIP(ip);
+            sampLauncher.setPort(port);
+            sampLauncher.setPassword(pass);
+            sampLauncher.connect();
         });
     }
 }
