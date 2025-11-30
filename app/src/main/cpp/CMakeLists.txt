@@ -1,56 +1,45 @@
-# Minimum CMake version
-cmake_minimum_required(VERSION 3.10.2)
+# Specify minimum CMake version
+cmake_minimum_required(VERSION 3.18.1)
 
-# Project name
-project(SAMPMobileLauncher)
+# Set the library name
+project(samp_launcher)
 
-# C++ standard
+# Set C++ standard
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
-set(CMAKE_POSITION_INDEPENDENT_CODE ON)  # Required for shared library
+set(CMAKE_CXX_EXTENSIONS OFF)
 
-# Library output folder
-set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/libs)
+# Path to your SAMP JNI folder
+set(SAMP_SRC_DIR ${CMAKE_CURRENT_SOURCE_DIR})
 
-# Include directories (headers)
+# Add source files
+file(GLOB_RECURSE SOURCES
+    "${SAMP_SRC_DIR}/*.cpp"
+    "${SAMP_SRC_DIR}/*.c"
+)
+
+# Add header files (optional)
 include_directories(
-    ${CMAKE_SOURCE_DIR}/
-    ${CMAKE_SOURCE_DIR}/game
-    ${CMAKE_SOURCE_DIR}/net
-    ${CMAKE_SOURCE_DIR}/gui
-    ${CMAKE_SOURCE_DIR}/vendor
-    ${CMAKE_SOURCE_DIR}/vendor/imgui
-    ${CMAKE_SOURCE_DIR}/vendor/inih/cpp
+    ${SAMP_SRC_DIR}
+    ${SAMP_SRC_DIR}/vendor
 )
 
-# Recursively collect all .cpp files in project folders
-file(GLOB_RECURSE SOURCE_FILES
-    "${CMAKE_SOURCE_DIR}/*.cpp"
-)
-
-# Create the shared library for Android
+# Build shared library
 add_library(
-    libsamp   # library name
-    SHARED
-    ${SOURCE_FILES}
+    libsamp SHARED
+    ${SOURCES}
 )
 
-# Find Android libraries
+# Link libraries (e.g., log, android, GLES, OpenSL)
 find_library(log-lib log)
 find_library(android-lib android)
-find_library(GLESv2-lib GLESv2)
+find_library(glesv2-lib GLESv2)
+find_library(OpenSL-lib OpenSLES)
 
-# Link libraries
 target_link_libraries(
-    samplauncher
+    samp_launcher
     ${log-lib}
     ${android-lib}
-    ${GLESv2-lib}
-)
-
-# Optional: define macros for build
-target_compile_definitions(samplauncher PRIVATE
-    BUILD_BETA
-    RAKSAMP_CLIENT
-    NETCODE_CONNCOOKIELULZ=0x6969
+    ${glesv2-lib}
+    ${OpenSL-lib}
 )

@@ -2,7 +2,7 @@ package ro.samp.mobile;
 
 public class SAMPLauncher {
     static {
-        System.loadLibrary("samp-lib"); // your compiled .so
+        System.loadLibrary("libsamp"); // your compiled .so
     }
 
     public native void setNick(String nick);
