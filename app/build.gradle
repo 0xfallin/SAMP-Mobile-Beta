@@ -41,6 +41,7 @@ android {
 
     externalNativeBuild {
         cmake {
+            cppFlags "-std=c++11"
             path "src/main/cpp/CMakeLists.txt"
         }
     }
