@@ -1,55 +1,75 @@
 package ro.samp.mobile;
 
 import android.os.Bundle;
-import android.util.Log;
+import android.widget.Button;
+import android.widget.EditText;
 import androidx.appcompat.app.AppCompatActivity;
-import android.widget.TextView;
+import org.json.JSONObject;
+import java.io.File;
+import java.io.FileWriter;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static final String TAG = "SAMPLauncher";
-    private FileLogger fileLogger;
-    private TextView tvStatus;
+    SAMPWrapper samp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        fileLogger = new FileLogger(this, "samp_logs.txt");
+        samp = new SAMPWrapper();
 
-        fileLogger.log("MainActivity started");
-        Log.d(TAG, "MainActivity started");
+        EditText nickField = findViewById(R.id.nickname);
+        EditText hostField = findViewById(R.id.host);
+        EditText portField = findViewById(R.id.port);
+        Button launchBtn = findViewById(R.id.launchBtn);
 
-        // Load libs in background to avoid UI freeze
-        new Thread(() -> {
-            loadLibraryWithLog("GTASA");  // loads libGTASA.so
-            loadLibraryWithLog("samp");   // loads libsamp.so
+        launchBtn.setOnClickListener(v -> {
+            String nick = nickField.getText().toString();
+            String host = hostField.getText().toString();
+            int port = Integer.parseInt(portField.getText().toString());
 
-            fileLogger.log("All libs loaded (background thread)");
-            Log.d(TAG, "All libs loaded (background thread)");
+            saveSettings(nick, host, port);
 
-            // Update UI after loading
-            runOnUiThread(() -> tvStatus.setText("SAMP Mobile Launcher Ready"));
-        }).start();
+            samp.launchGame();
+        });
     }
 
-    /**
-     * Helper method to load native libraries and log success/failure
-     */
-    private void loadLibraryWithLog(String libName) {
+    private void saveSettings(String nick, String host, int port) {
         try {
-            System.loadLibrary(libName);
-            String msg = "Loaded lib: " + libName + ".so";
-            Log.d(TAG, msg);
-            fileLogger.log(msg);
-        } catch (UnsatisfiedLinkError e) {
-            String msg = "FAILED to load " + libName + ".so → " + e.getMessage();
-            Log.e(TAG, msg, e);
-            fileLogger.log(msg);
+            JSONObject server = new JSONObject();
+            server.put("host", host);
+            server.put("port", port);
+            server.put("password", "");
+
+            JSONObject settings = new JSONObject();
+            settings.put("nick_name", nick);
+            settings.put("new_interface", false);
+            settings.put("timestamp", false);
+            settings.put("fast_connect", false);
+            settings.put("voice_chat", false);
+            settings.put("display_fps", false);
+            settings.put("cleo", false);
+            settings.put("fps_limit", 30);
+            settings.put("chat_strings", 5);
+
+            JSONObject client = new JSONObject();
+            client.put("server", server);
+            client.put("settings", settings);
+
+            JSONObject root = new JSONObject();
+            root.put("client", client);
+
+            File sampFolder = new File(getExternalFilesDir(null), "SAMP");
+            if (!sampFolder.exists()) sampFolder.mkdirs();
+
+            File settingsFile = new File(sampFolder, "settings.json");
+            try (FileWriter fw = new FileWriter(settingsFile)) {
+                fw.write(root.toString(4));
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
-
-    // Example native function
-    public native void initSamp();
 }
