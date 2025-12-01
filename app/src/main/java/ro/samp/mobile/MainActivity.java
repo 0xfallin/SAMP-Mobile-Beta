@@ -1,23 +1,24 @@
 package ro.samp.mobile;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
+
 import androidx.appcompat.app.AppCompatActivity;
+
 import org.json.JSONObject;
 import java.io.File;
 import java.io.FileWriter;
 
-public class MainActivity extends AppCompatActivity {
+import ro.samp.mobile.SAMP;
 
-    SAMPWrapper samp;
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        samp = new SAMPWrapper();
 
         EditText nickField = findViewById(R.id.nickname);
         EditText hostField = findViewById(R.id.host);
@@ -31,7 +32,12 @@ public class MainActivity extends AppCompatActivity {
 
             saveSettings(nick, host, port);
 
-            samp.launchGame();
+            // Launch SAMP activity directly and pass values
+            Intent intent = new Intent(MainActivity.this, SAMP.class);
+            intent.putExtra("NICK_NAME", nick);
+            intent.putExtra("HOST", host);
+            intent.putExtra("PORT", port);
+            startActivity(intent);
         });
     }
 
