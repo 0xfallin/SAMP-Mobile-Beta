@@ -1,7 +1,4 @@
-plugins {
-    id 'com.android.application'
-    id 'com.google.gms.google-services'
-}
+apply plugin: 'com.android.application'
 
 // Top-level repositories
 allprojects {
