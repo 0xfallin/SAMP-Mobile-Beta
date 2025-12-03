@@ -40,7 +40,7 @@ jobs:
 
       # 5. Run Gradle build
       - name: Build APK
-        run: ./gradlew clean :app:assembleDebug
+        run: ./gradlew assembleDebug --no-daemon
 
       # 6. Upload APK as artifact
       - name: Upload APK
