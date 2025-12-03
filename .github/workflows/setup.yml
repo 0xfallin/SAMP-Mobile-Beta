@@ -33,6 +33,12 @@ jobs:
         with:
           ndk-version: r16b
 
+      # ✨ FIX: Install the missing legacy library
+      - name: Install libncurses5
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libncurses5
+
       # 5. Run ndk-build (Fixed Indentation)
       - name: Run ndk-build (r16b Toolchain)
         # Note: Ensure the paths here are correct relative to your checkout root
