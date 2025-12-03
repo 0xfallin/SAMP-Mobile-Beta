@@ -34,10 +34,22 @@ jobs:
           ndk-version: r16b
 
       # ✨ FIX: Install the missing legacy library
-      - name: Install libncurses5
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y libncurses5
+      - name: Install NDK r16b Dependencies (libncurses5)
+      run: |
+        sudo apt-get update
+        # 1. Try installing libncurses5-dev (often works on newer runners)
+        sudo apt-get install -y libncurses5-dev || true
+        # 2. If the above fails, install the core ncurses library and its development files
+        sudo apt-get install -y libncurses6 libtinfo5
+        
+        # 3. Handle the 'libncurses.so.5' symlink issue (most critical for older NDKs)
+        # This manually ensures the old 'libncurses.so.5' file exists for the NDK toolchain to find.
+        if [ ! -f /usr/lib/x86_64-linux-gnu/libtinfo.so.5 ]; then
+            sudo ln -s /lib/x86_64-linux-gnu/libtinfo.so.6 /usr/lib/x86_64-linux-gnu/libtinfo.so.5
+        fi
+        if [ ! -f /usr/lib/x86_64-linux-gnu/libncurses.so.5 ]; then
+            sudo ln -s /usr/lib/x86_64-linux-gnu/libncurses.so.6 /usr/lib/x86_64-linux-gnu/libncurses.so.5
+        fi
 
       # 5. Run ndk-build (Fixed Indentation)
       - name: Run ndk-build (r16b Toolchain)
