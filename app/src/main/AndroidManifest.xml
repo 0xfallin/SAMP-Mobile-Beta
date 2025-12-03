@@ -2,7 +2,7 @@
 
     <application
         android:allowBackup="true"
-        android:label="SA-MP Mobile"
+        android:label="SAMP Mobile"
         android:icon="@mipmap/ic_launcher"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"

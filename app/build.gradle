@@ -1,26 +1,49 @@
-apply plugin: 'com.android.application'
+plugins {
+    id 'com.android.application'
+}
 
 android {
+    // Basic Configuration
     namespace "ro.samp.mobile"
-    compileSdkVersion 34
+    compileSdkVersion 34 
 
     defaultConfig {
         applicationId "ro.samp.mobile"
-        minSdkVersion 24
+        minSdkVersion 24 
         targetSdkVersion 34
         versionCode 1
         versionName "1.0"
+        
+        // ✨ CRITICAL ADDITION: Specifies which ABIs to include in the final APK
+        ndk {
+            // These ABIs must match what your ndk-build command targets (Application.mk)
+            abiFilters 'armeabi-v7a', 'arm64-v8a' 
+        }
     }
 
     buildTypes {
         debug {
-            minifyEnabled false
+            minifyEnabled false 
         }
         release {
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    
+    // Java/Kotlin Compatibility
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    // Optional: If ndk-build puts files in a custom location, you can map it here.
+    // If your ndk-build places files into the standard 'src/main/jniLibs', this is not needed.
+    // sourceSets {
+    //     main {
+    //         jniLibs.srcDirs = ['libs'] // Tells Gradle to look in the project's root 'libs' folder
+    //     }
+    // }
 }
 
 repositories {
@@ -32,5 +55,5 @@ dependencies {
     implementation 'androidx.core:core-ktx:1.12.0'
     implementation 'androidx.appcompat:appcompat:1.7.1'
     implementation 'com.google.android.material:material:1.11.0'
-    // Add any other dependencies your launcher needs
+    // ... other dependencies
 }

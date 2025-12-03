@@ -14,16 +14,34 @@ jobs:
     steps:
       # 1. Checkout the repo
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       # 2. Set up JDK 17
-      - name: Set up JDK
+      - name: Set up JDK 17
         uses: actions/setup-java@v3
         with:
           distribution: temurin
           java-version: 17
 
-      # 3. Cache Gradle dependencies
+      # 3. Setup Android SDK (Essential for Gradle)
+      - name: Set up Android SDK
+        uses: android-actions/setup-android@v3
+
+      # 4. Setup NDK r16b (Fixed Indentation)
+      - name: Download and Setup Android NDK r16b
+        uses: nttld/setup-ndk@v1
+        with:
+          ndk-version: r16b
+
+      # 5. Run ndk-build (Fixed Indentation)
+      - name: Run ndk-build (r16b Toolchain)
+        # Note: Ensure the paths here are correct relative to your checkout root
+        run: |
+          ndk-build NDK_PROJECT_PATH=./app/src/main/cpp/samp/jni \
+            APP_BUILD_SCRIPT=./app/src/main/cpp/samp/jni/Android.mk \
+            NDK_APPLICATION_MK=./app/src/main/cpp/samp/jni/Application.mk
+
+      # 6. Cache Gradle dependencies
       - name: Cache Gradle packages
         uses: actions/cache@v3
         with:
@@ -33,16 +51,17 @@ jobs:
           key: gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
           restore-keys: |
             gradle-
-    
-      # 4. Set Permission to gradlew
+      
+      # 7. Set Permission to gradlew
       - name: Make Gradle Wrapper executable
         run: chmod +x ./gradlew
 
-      # 5. Run Gradle build
+      # 8. Run Gradle build
       - name: Build APK
+        # Gradle will automatically find the NDK path because it was set in step 4
         run: ./gradlew clean :app:assembleDebug
 
-      # 6. Upload APK as artifact
+      # 9. Upload APK as artifact
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
