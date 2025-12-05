@@ -14,9 +14,8 @@ android {
         versionCode 1
         versionName "1.0"
         
-        // ✨ CRITICAL ADDITION: Specifies which ABIs to include in the final APK
         ndk {
-            abiFilters 'armeabi-v7a',
+            abiFilters 'armeabi-v7a'
         }
     }
 
@@ -32,17 +31,10 @@ android {
     
     // Java/Kotlin Compatibility
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
     }
-
-    // Optional: If ndk-build puts files in a custom location, you can map it here.
-    // If your ndk-build places files into the standard 'src/main/jniLibs', this is not needed.
-    // sourceSets {
-    //     main {
-    //         jniLibs.srcDirs = ['libs'] // Tells Gradle to look in the project's root 'libs' folder
-    //     }
-    // }
+    
 }
 
 repositories {
