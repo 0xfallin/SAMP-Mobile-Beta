@@ -1,695 +1,142 @@
---------- beginning of main
-12-05 13:31:46.392 31989 31989 I ro.samp.mobile: Late-enabling -Xcheck:jni
-12-05 13:31:46.416 31989 31989 W ro.samp.mobile: Using default instruction set features for ARM CPU variant (cortex-a9) using conservative defaults
-12-05 13:31:46.470 31989 32011 D AppScoutStateMachine: 31989-ScoutStateMachinecreated
-12-05 13:31:46.471 31989 31989 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10403; state: ENABLED
-12-05 13:31:46.497 31989 31989 V GraphicsEnvironment: ANGLE Developer option for 'ro.samp.mobile' set to: 'default'
-12-05 13:31:46.497 31989 31989 V GraphicsEnvironment: Updatable production driver is not supported on the device.
---------- beginning of system
-12-05 13:31:46.499 31989 31989 I ForceDarkHelperStubImpl: initialize for ro.samp.mobile , ForceDarkOrigin
-12-05 13:31:46.500 31989 31989 D OpenGLRenderer: JNI_OnLoad success
-12-05 13:31:46.500 31989 31989 I MiuiForceDarkConfig: setConfig density:2.750000, mainRule:0, secondaryRule:0, tertiaryRule:0
-12-05 13:31:46.503 31989 31989 D NetworkSecurityConfig: No Network Security Config specified, using platform default
-12-05 13:31:46.503 31989 31989 D NetworkSecurityConfig: No Network Security Config specified, using platform default
-12-05 13:31:46.549 31989 31989 D ViewScrollStubImpl: the value of ScrollFrictionRes is: 0.015
-12-05 13:31:46.553 31989 31989 D IS_CTS_MODE: false
-12-05 13:31:46.554 31989 31989 D MULTI_WINDOW_SWITCH_ENABLED: false
-12-05 13:31:46.554 31989 31989 D IS_CTS_MODE: false
-12-05 13:31:46.554 31989 31989 D MULTI_WINDOW_SWITCH_ENABLED: false
-12-05 13:31:46.558 31989 31989 D DecorView[]: getWindowModeFromSystem  windowmode is 1
-12-05 13:31:46.611 31989 32023 D ViewContentFactory: initViewContentFetcherClass
-12-05 13:31:46.611 31989 32023 D ViewContentFactory: getInterceptorPackageInfo
-12-05 13:31:46.612 31989 32023 D ViewContentFactory: getInitialApplication took 0ms
-12-05 13:31:46.612 31989 32023 D ViewContentFactory: packageInfo.packageName: com.miui.catcherpatch
-12-05 13:31:46.618 31989 32023 D ViewContentFactory: initViewContentFetcherClass took 7ms
-12-05 13:31:46.619 31989 32023 I ContentCatcher: ViewContentFetcher : ViewContentFetcher
-12-05 13:31:46.619 31989 32023 D ViewContentFactory: createInterceptor took 7ms
-12-05 13:31:46.658 31989 32020 I AdrenoGLES-0: QUALCOMM build                   : f9286358ab, I9676dd3674
-12-05 13:31:46.658 31989 32020 I AdrenoGLES-0: Build Date                       : 07/26/22
-12-05 13:31:46.658 31989 32020 I AdrenoGLES-0: OpenGL ES Shader Compiler Version: E031.40.09.00
-12-05 13:31:46.658 31989 32020 I AdrenoGLES-0: Local Branch                     : 
-12-05 13:31:46.658 31989 32020 I AdrenoGLES-0: Remote Branch                    : refs/tags/AU_LINUX_ANDROID_LA.UM.8.12.C3.10.00.00.670.284
-12-05 13:31:46.658 31989 32020 I AdrenoGLES-0: Remote Branch                    : NONE
-12-05 13:31:46.658 31989 32020 I AdrenoGLES-0: Reconstruct Branch               : NOTHING
-12-05 13:31:46.658 31989 32020 I AdrenoGLES-0: Build Config                     : S P 8.0.12 AArch32
-12-05 13:31:46.658 31989 32020 I AdrenoGLES-0: Driver Path                      : /vendor/lib/egl/libGLESv2_adreno.so
-12-05 13:31:46.658 31989 32020 I AdrenoGLES-0: Driver Version                   : 0655.0
-12-05 13:31:46.658 31989 32020 E cutils-trace: Error opening trace file: No such file or directory (2)
-12-05 13:31:46.662 31989 32020 I AdrenoGLES-0: PFP: 0x016ee190, ME: 0x00000000
-12-05 13:31:46.712 31989 31989 D DecorView[]: onWindowFocusChanged hasWindowFocus true
-12-05 13:31:47.362 31989 31989 D DecorView[]: onWindowFocusChanged hasWindowFocus false
-12-05 13:31:52.479 31989 32089 D ProfileInstaller: Installing profile for ro.samp.mobile
-12-05 13:34:24.662 31989 32014 D AppScoutStateMachine: 31989-ScoutStateMachinecreated
-12-05 13:34:24.717 31989 31989 D CompatibilityChangeReporter: Compat change id reported: 163400105; UID 10403; state: ENABLED
-12-05 13:34:24.723 31989 31989 I AssistStructure: Flattened final assist data: 1372 bytes, containing 1 windows, 6 views
-12-05 13:34:24.730 31989 31989 D DecorView[]: onWindowFocusChanged hasWindowFocus true
-12-05 13:34:25.536 31989 31989 D DecorView[]: onWindowFocusChanged hasWindowFocus false
-12-05 13:34:45.657 31989 32012 D AppScoutStateMachine: 31989-ScoutStateMachinecreated
-12-05 13:34:45.704 31989 31989 D DecorView[]: onWindowFocusChanged hasWindowFocus true
-12-05 13:34:46.405 31989 31989 D DecorView[]: onWindowFocusChanged hasWindowFocus false
-12-05 13:34:52.274 31989 32011 D AppScoutStateMachine: 31989-ScoutStateMachinecreated
-12-05 13:34:52.340 31989 31989 D DecorView[]: onWindowFocusChanged hasWindowFocus true
-12-05 13:34:53.345 31989 31989 W MirrorManager: this model don't Support
-12-05 13:34:53.448 31989 31989 D CompatibilityChangeReporter: Compat change id reported: 147798919; UID 10403; state: ENABLED
-12-05 13:34:53.475 31989  2870 D NVEvent : JNI_OnLoad called
-12-05 13:34:53.475 31989  2870 F ro.samp.mobile: java_vm_ext.cc:579] JNI DETECTED ERROR IN APPLICATION: JNI FindClass called with pending exception java.lang.UnsatisfiedLinkError: dlopen failed: library "/data/data/com.rockstargames.gtasa/lib/libsamp.so" not found
-12-05 13:34:53.475 31989  2870 F ro.samp.mobile: java_vm_ext.cc:579]   at void java.lang.Runtime.load0(java.lang.Class, java.lang.String) (Runtime.java:929)
-12-05 13:34:53.475 31989  2870 F ro.samp.mobile: java_vm_ext.cc:579]   at void java.lang.System.load(java.lang.String) (System.java:1620)
-12-05 13:34:53.475 31989  2870 F ro.samp.mobile: java_vm_ext.cc:579]   at java.lang.String java.lang.Runtime.nativeLoad(java.lang.String, java.lang.ClassLoader, java.lang.Class) (Runtime.java:-2)
-12-05 13:34:53.475 31989  2870 F ro.samp.mobile: java_vm_ext.cc:579]   at java.lang.String java.lang.Runtime.nativeLoad(java.lang.String, java.lang.ClassLoader) (Runtime.java:1121)
-12-05 13:34:53.475 31989  2870 F ro.samp.mobile: java_vm_ext.cc:579]   at void java.lang.Runtime.loadLibrary0(java.lang.ClassLoader, java.lang.Class, java.lang.String) (Runtime.java:1075)
-12-05 13:34:53.475 31989  2870 F ro.samp.mobile: java_vm_ext.cc:579]   at void java.lang.Runtime.loadLibrary0(java.lang.Class, java.lang.String) (Runtime.java:998)
-12-05 13:34:53.475 31989  2870 F ro.samp.mobile: java_vm_ext.cc:579]   at void java.lang.System.loadLibrary(java.lang.String) (System.java:1656)
-12-05 13:34:53.475 31989  2870 F ro.samp.mobile: java_vm_ext.cc:579]   at void ro.samp.mobile.SAMP.loadLibraries() (SAMP.java:14)
-12-05 13:34:53.475 31989  2870 F ro.samp.mobile: java_vm_ext.cc:579]   at void ro.samp.mobile.MainActivity.lambda$onCreate$5$ro-samp-mobile-MainActivity() (MainActivity.java:61)
-12-05 13:34:53.475 31989  2870 F ro.samp.mobile: java_vm_ext.cc:579]   at void ro.samp.mobile.MainActivity$$ExternalSyntheticLambda6.run() (D8$$SyntheticClass:0)
-12-05 13:34:53.475 31989  2870 F ro.samp.mobile: java_vm_ext.cc:579]   at void java.lang.Thread.run() (Thread.java:920)
-12-05 13:34:53.475 31989  2870 F ro.samp.mobile: java_vm_ext.cc:579] 
-12-05 13:34:53.475 31989  2870 F ro.samp.mobile: java_vm_ext.cc:579]     in call to FindClass
-12-05 13:34:53.475 31989  2870 F ro.samp.mobile: java_vm_ext.cc:579]     from java.lang.String java.lang.Runtime.nativeLoad(java.lang.String, java.lang.ClassLoader, java.lang.Class)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669] Runtime aborting...
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669] Dumping all threads without mutator lock held
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669] All threads:
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669] DALVIK THREADS (22):
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669] "Thread-3" prio=5 tid=4 Runnable
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | group="" sCount=0 ucsCount=0 flags=0 obj=0x12cd11a8 self=0xefe83600
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | sysTid=2870 nice=0 cgrp=default sched=0/0 handle=0xc1d5a1c0
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | state=R schedstat=( 0 0 0 ) utm=1 stm=0 core=4 HZ=100
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | stack=0xc1c57000-0xc1c59000 stackSize=1036KB
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | held mutexes= "abort lock" "mutator lock"(shared held)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #00 pc 00375931  /apex/com.android.art/lib/libart.so (art::DumpNativeStack(std::__1::basic_ostream<char, std::__1::char_traits<char> >&, int, BacktraceMap*, char const*, art::ArtMethod*, void*, bool)+76)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #01 pc 0044df57  /apex/com.android.art/lib/libart.so (art::Thread::DumpStack(std::__1::basic_ostream<char, std::__1::char_traits<char> >&, bool, BacktraceMap*, bool) const+214)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #02 pc 00465a31  /apex/com.android.art/lib/libart.so (art::DumpCheckpoint::Run(art::Thread*)+656)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #03 pc 00460f8d  /apex/com.android.art/lib/libart.so (art::ThreadList::RunCheckpoint(art::Closure*, art::Closure*)+348)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #04 pc 004604cf  /apex/com.android.art/lib/libart.so (art::ThreadList::Dump(std::__1::basic_ostream<char, std::__1::char_traits<char> >&, bool)+1222)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #05 pc 0040cb5b  /apex/com.android.art/lib/libart.so (art::Runtime::Abort(char const*)+1770)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #06 pc 0000f59d  /apex/com.android.art/lib/libbase.so (android::base::SetAborter(std::__1::function<void (char const*)>&&)::$_3::__invoke(char const*)+48)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #07 pc 0000eee9  /apex/com.android.art/lib/libbase.so (android::base::LogMessage::~LogMessage()+236)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #08 pc 0029eba9  /apex/com.android.art/lib/libart.so (art::JavaVMExt::JniAbort(char const*, char const*)+1900)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #09 pc 0029ec0f  /apex/com.android.art/lib/libart.so (art::JavaVMExt::JniAbortV(char const*, char const*, std::__va_list)+54)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #10 pc 00293e89  /apex/com.android.art/lib/libart.so (art::(anonymous namespace)::ScopedCheck::AbortF(char const*, ...)+40)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #11 pc 00292bfd  /apex/com.android.art/lib/libart.so (art::(anonymous namespace)::ScopedCheck::CheckPossibleHeapValue(art::ScopedObjectAccess&, char, art::(anonymous namespace)::JniValueType)+2604)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #12 pc 00291b97  /apex/com.android.art/lib/libart.so (art::(anonymous namespace)::ScopedCheck::Check(art::ScopedObjectAccess&, bool, char const*, art::(anonymous namespace)::JniValueType*)+646)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #13 pc 0027ea4f  /apex/com.android.art/lib/libart.so (art::(anonymous namespace)::CheckJNI::FindClass(_JNIEnv*, char const*) (.llvm.9212977709730125726)+526)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #14 pc 00241907  /data/app/~~O3jlPs1WJYyPnMdZUT4a_Q==/ro.samp.mobile-oVhsWVn5wjVrCiMJj14C4Q==/lib/arm/libGTASA.so (???)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at java.lang.Runtime.nativeLoad(Native method)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at java.lang.Runtime.nativeLoad(Runtime.java:1121)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at java.lang.Runtime.loadLibrary0(Runtime.java:1075)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   - locked <0x0a307721> (a java.lang.Runtime)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at java.lang.Runtime.loadLibrary0(Runtime.java:998)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at java.lang.System.loadLibrary(System.java:1656)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at ro.samp.mobile.SAMP.loadLibraries(SAMP.java:14)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at ro.samp.mobile.MainActivity.lambda$onCreate$5$ro-samp-mobile-MainActivity(MainActivity.java:61)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at ro.samp.mobile.MainActivity$$ExternalSyntheticLambda6.run(D8$$SyntheticClass:0)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at java.lang.Thread.run(Thread.java:920)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669] 
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669] "Signal Catcher" prio=10 tid=3 WaitingInMainSignalCatcherLoop
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | group="" sCount=1 ucsCount=0 flags=1 obj=0x12e00228 self=0xf1bb3c00
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | sysTid=32001 nice=-20 cgrp=default sched=0/0 handle=0xdbbfb1c0
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | state=S schedstat=( 0 0 0 ) utm=0 stm=0 core=1 HZ=100
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | stack=0xdbb00000-0xdbb02000 stackSize=1004KB
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | held mutexes=
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #00 pc 0009a12c  /apex/com.android.runtime/lib/bionic/libc.so (__rt_sigtimedwait+12)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #01 pc 0006ac13  /apex/com.android.runtime/lib/bionic/libc.so (sigwait64+54)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #02 pc 0042a091  /apex/com.android.art/lib/libart.so (art::SignalCatcher::WaitForSignal(art::Thread*, art::SignalSet&)+200)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #03 pc 004291ed  /apex/com.android.art/lib/libart.so (art::SignalCatcher::Run(void*)+192)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #04 pc 000a8e57  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+40)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #05 pc 00061dd3  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   (no managed stack frames)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669] 
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669] "perfetto_hprof_listener" prio=10 tid=7 Native (still starting up)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | group="" sCount=1 ucsCount=0 flags=1 obj=0x0 self=0xefc9fa00
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | sysTid=32002 nice=-20 cgrp=default sched=0/0 handle=0xdb9901c0
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | state=S schedstat=( 0 0 0 ) utm=0 stm=0 core=4 HZ=100
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | stack=0xdb895000-0xdb897000 stackSize=1004KB
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | held mutexes=
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #00 pc 00099378  /apex/com.android.runtime/lib/bionic/libc.so (read+8)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #01 pc 000101ed  /apex/com.android.art/lib/libperfetto_hprof.so (void* std::__1::__thread_proxy<std::__1::tuple<std::__1::unique_ptr<std::__1::__thread_struct, std::__1::default_delete<std::__1::__thread_struct> >, ArtPlugin_Initialize::$_33> >(void*)+208)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #02 pc 000a8e57  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+40)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #03 pc 00061dd3  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   (no managed stack frames)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669] 
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669] "ADB-JDWP Connection Control Thread" prio=10 tid=8 WaitingInMainDebuggerLoop
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | group="" sCount=1 ucsCount=0 flags=1 obj=0x12e002a0 self=0xef9c0400
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | sysTid=32003 nice=-20 cgrp=default sched=0/0 handle=0xdb7cb1c0
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | state=S schedstat=( 0 0 0 ) utm=0 stm=0 core=1 HZ=100
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | stack=0xdb6d0000-0xdb6d2000 stackSize=1004KB
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | held mutexes=
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #00 pc 0005bf90  /apex/com.android.runtime/lib/bionic/libc.so (syscall+32)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #01 pc 00060a69  /apex/com.android.runtime/lib/bionic/libc.so (SystemProperties::Wait(prop_info const*, unsigned int, unsigned int*, timespec const*)+46)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #02 pc 0006ca57  /apex/com.android.runtime/lib/bionic/libc.so (__system_property_wait+18)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #03 pc 00008ee5  /apex/com.android.adbd/lib/libadbconnection_client.so (android::base::WaitForProperty(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::chrono::duration<long long, std::__1::ratio<1ll, 1000ll> >)+892)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #04 pc 000068b1  /apex/com.android.adbd/lib/libadbconnection_client.so (adbconnection_client_new+824)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #05 pc 00007c11  /apex/com.android.art/lib/libadbconnection.so (adbconnection::AdbConnectionState::SetupAdbConnection()+164)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #06 pc 00007e17  /apex/com.android.art/lib/libadbconnection.so (adbconnection::AdbConnectionState::RunPollLoop(art::Thread*)+426)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #07 pc 00006b6f  /apex/com.android.art/lib/libadbconnection.so (adbconnection::CallbackFunction(void*)+1138)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #08 pc 000a8e57  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+40)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #09 pc 00061dd3  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   (no managed stack frames)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669] 
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669] "Jit thread pool worker thread 0" prio=5 tid=9 Native
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | group="" sCount=1 ucsCount=0 flags=1 obj=0x12e00318 self=0xef9b8600
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | sysTid=32004 nice=9 cgrp=default sched=0/0 handle=0xcb1c61c0
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | state=S schedstat=( 0 0 0 ) utm=13 stm=1 core=2 HZ=100
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | stack=0xcb0c7000-0xcb0c9000 stackSize=1020KB
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | held mutexes=
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #00 pc 0005bf8c  /apex/com.android.runtime/lib/bionic/libc.so (syscall+28)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #01 pc 00149241  /apex/com.android.art/lib/libart.so (art::ConditionVariable::WaitHoldingLocks(art::Thread*)+88)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #02 pc 00466c95  /apex/com.android.art/lib/libart.so (art::ThreadPool::GetTask(art::Thread*)+54)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #03 pc 004664ad  /apex/com.android.art/lib/libart.so (art::ThreadPoolWorker::Run()+72)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #04 pc 004660ef  /apex/com.android.art/lib/libart.so (art::ThreadPoolWorker::Callback(void*)+114)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #05 pc 000a8e57  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+40)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #06 pc 00061dd3  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   (no managed stack frames)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669] 
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669] "main" prio=10 tid=1 Runnable
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | group="" sCount=0 ucsCount=0 flags=0 obj=0x73a28f40 self=0xf1bb2e00
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | sysTid=31989 nice=-10 cgrp=default sched=0/0 handle=0xf2146470
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | state=R schedstat=( 0 0 0 ) utm=56 stm=6 core=5 HZ=100
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | stack=0xff55d000-0xff55f000 stackSize=8188KB
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | held mutexes= "mutator lock"(shared held)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #00 pc 00375931  /apex/com.android.art/lib/libart.so (art::DumpNativeStack(std::__1::basic_ostream<char, std::__1::char_traits<char> >&, int, BacktraceMap*, char const*, art::ArtMethod*, void*, bool)+76)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #01 pc 0044df57  /apex/com.android.art/lib/libart.so (art::Thread::DumpStack(std::__1::basic_ostream<char, std::__1::char_traits<char> >&, bool, BacktraceMap*, bool) const+214)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #02 pc 00465a31  /apex/com.android.art/lib/libart.so (art::DumpCheckpoint::Run(art::Thread*)+656)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #03 pc 0044eaf9  /apex/com.android.art/lib/libart.so (art::Thread::RunCheckpointFunction()+132)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #04 pc 004de727  /apex/com.android.art/lib/libart.so (artTestSuspendFromCode+8)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #05 pc 000f4aad  /apex/com.android.art/lib/libart.so (art_quick_test_suspend+28)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #06 pc 000e28d8  /apex/com.android.art/lib/libart.so (ExecuteNterpImpl+968)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #07 pc 009caca2  /memfd:/system/framework/arm/boot-framework.vdex (deleted) (???)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #08 pc 000ebda0  /apex/com.android.art/lib/libart.so (nterp_helper+2800)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #09 pc 01620258  /memfd:/system/framework/arm/boot-framework.vdex (deleted) (???)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #10 pc 000ebda0  /apex/com.android.art/lib/libart.so (nterp_helper+2800)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #11 pc 016288a8  /memfd:/system/framework/arm/boot-framework.vdex (deleted) (???)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #12 pc 0200ea99  /memfd:jit-cache (deleted) (offset 2000000) (android.view.View.draw+312)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #13 pc 02008623  /memfd:jit-cache (deleted) (offset 2000000) (android.view.View.updateDisplayListIfDirty+1554)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #14 pc 000ebe0c  /apex/com.android.art/lib/libart.so (nterp_helper+2908)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #15 pc 0161457e  /memfd:/system/framework/arm/boot-framework.vdex (deleted) (???)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #16 pc 000ebda0  /apex/com.android.art/lib/libart.so (nterp_helper+2800)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #17 pc 016133e8  /memfd:/system/framework/arm/boot-framework.vdex (deleted) (???)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #18 pc 0200825b  /memfd:jit-cache (deleted) (offset 2000000) (android.view.View.updateDisplayListIfDirty+586)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #19 pc 000ebe0c  /apex/com.android.art/lib/libart.so (nterp_helper+2908)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #20 pc 0161457e  /memfd:/system/framework/arm/boot-framework.vdex (deleted) (???)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #21 pc 000ebda0  /apex/com.android.art/lib/libart.so (nterp_helper+2800)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #22 pc 016133e8  /memfd:/system/framework/arm/boot-framework.vdex (deleted) (???)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #23 pc 0200825b  /memfd:jit-cache (deleted) (offset 2000000) (android.view.View.updateDisplayListIfDirty+586)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #24 pc 000ebe0c  /apex/com.android.art/lib/libart.so (nterp_helper+2908)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #25 pc 0161457e  /memfd:/system/framework/arm/boot-framework.vdex (deleted) (???)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #26 pc 000ebda0  /apex/com.android.art/lib/libart.so (nterp_helper+2800)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #27 pc 016133e8  /memfd:/system/framework/arm/boot-framework.vdex (deleted) (???)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #28 pc 0200825b  /memfd:jit-cache (deleted) (offset 2000000) (android.view.View.updateDisplayListIfDirty+586)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #29 pc 000ebe0c  /apex/com.android.art/lib/libart.so (nterp_helper+2908)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #30 pc 0161457e  /memfd:/system/framework/arm/boot-framework.vdex (deleted) (???)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #31 pc 000ebda0  /apex/com.android.art/lib/libart.so (nterp_helper+2800)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #32 pc 016133e8  /memfd:/system/framework/arm/boot-framework.vdex (deleted) (???)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #33 pc 0200825b  /memfd:jit-cache (deleted) (offset 2000000) (android.view.View.updateDisplayListIfDirty+586)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #34 pc 000ebe0c  /apex/com.android.art/lib/libart.so (nterp_helper+2908)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #35 pc 0160f3c0  /memfd:/system/framework/arm/boot-framework.vdex (deleted) (???)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #36 pc 000ebda0  /apex/com.android.art/lib/libart.so (nterp_helper+2800)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #37 pc 0160f29e  /memfd:/system/framework/arm/boot-framework.vdex (deleted) (???)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #38 pc 000ebda0  /apex/com.android.art/lib/libart.so (nterp_helper+2800)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #39 pc 0160f038  /memfd:/system/framework/arm/boot-framework.vdex (deleted) (???)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #40 pc 000ebda0  /apex/com.android.art/lib/libart.so (nterp_helper+2800)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #41 pc 016189e0  /memfd:/system/framework/arm/boot-framework.vdex (deleted) (???)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #42 pc 000ebda0  /apex/com.android.art/lib/libart.so (nterp_helper+2800)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #43 pc 0161c172  /memfd:/system/framework/arm/boot-framework.vdex (deleted) (???)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #44 pc 0200d66b  /memfd:jit-cache (deleted) (offset 2000000) (android.view.ViewRootImpl.performTraversals+15394)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #45 pc 000ebe0c  /apex/com.android.art/lib/libart.so (nterp_helper+2908)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #46 pc 0161ae66  /memfd:/system/framework/arm/boot-framework.vdex (deleted) (???)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #47 pc 000ebda0  /apex/com.android.art/lib/libart.so (nterp_helper+2800)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #48 pc 01616ff6  /memfd:/system/framework/arm/boot-framework.vdex (deleted) (???)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #49 pc 000ec74c  /apex/com.android.art/lib/libart.so (nterp_helper+5276)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #50 pc 015fd192  /memfd:/system/framework/arm/boot-framework.vdex (deleted) (???)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #51 pc 000ebda0  /apex/com.android.art/lib/libart.so (nterp_helper+2800)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #52 pc 015fd69c  /memfd:/system/framework/arm/boot-framework.vdex (deleted) (???)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #53 pc 000ec4a8  /apex/com.android.art/lib/libart.so (nterp_helper+4600)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #54 pc 015fda00  /memfd:/system/framework/arm/boot-framework.vdex (deleted) (???)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #55 pc 000ebda0  /apex/com.android.art/lib/libart.so (nterp_helper+2800)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #56 pc 015fd2f6  /memfd:/system/framework/arm/boot-framework.vdex (deleted) (???)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #57 pc 000ec74c  /apex/com.android.art/lib/libart.so (nterp_helper+5276)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #58 pc 011188d6  /memfd:/system/framework/arm/boot-framework.vdex (deleted) (???)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #59 pc 000eb2e8  /apex/com.android.art/lib/libart.so (nterp_helper+56)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #60 pc 01118900  /memfd:/system/framework/arm/boot-framework.vdex (deleted) (???)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #61 pc 000ebda0  /apex/com.android.art/lib/libart.so (nterp_helper+2800)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #62 pc 0113de40  /memfd:/system/framework/arm/boot-framework.vdex (deleted) (???)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #63 pc 000eb2e8  /apex/com.android.art/lib/libart.so (nterp_helper+56)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #64 pc 0113dcbc  /memfd:/system/framework/arm/boot-framework.vdex (deleted) (???)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #65 pc 000eb2e8  /apex/com.android.art/lib/libart.so (nterp_helper+56)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #66 pc 007c7c0a  /memfd:/system/framework/arm/boot-framework.vdex (deleted) (???)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #67 pc 000f01d5  /apex/com.android.art/lib/libart.so (art_quick_invoke_stub_internal+68)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #68 pc 005099c5  /apex/com.android.art/lib/libart.so (art_quick_invoke_static_stub+284)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #69 pc 00143a47  /apex/com.android.art/lib/libart.so (art::ArtMethod::Invoke(art::Thread*, unsigned int*, unsigned int, art::JValue*, char const*)+158)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #70 pc 004055b5  /apex/com.android.art/lib/libart.so (_jobject* art::InvokeMethod<(art::PointerSize)4>(art::ScopedObjectAccessAlreadyRunnable const&, _jobject*, _jobject*, _jobject*, unsigned int)+852)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #71 pc 00399423  /apex/com.android.art/lib/libart.so (art::Method_invoke(_JNIEnv*, _jobject*, _jobject*, _jobjectArray*)+30)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at android.graphics.Canvas.translate(Canvas.java:695)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at android.view.View.getDrawableRenderNode(View.java:23332)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at android.view.View.drawBackground(View.java:23250)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at android.view.View.draw(View.java:23007)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at android.view.View.updateDisplayListIfDirty(View.java:21885)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at android.view.ViewGroup.recreateChildDisplayList(ViewGroup.java:4526)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at android.view.ViewGroup.dispatchGetDisplayList(ViewGroup.java:4499)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at android.view.View.updateDisplayListIfDirty(View.java:21838)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at android.view.ViewGroup.recreateChildDisplayList(ViewGroup.java:4526)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at android.view.ViewGroup.dispatchGetDisplayList(ViewGroup.java:4499)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at android.view.View.updateDisplayListIfDirty(View.java:21838)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at android.view.ViewGroup.recreateChildDisplayList(ViewGroup.java:4526)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at android.view.ViewGroup.dispatchGetDisplayList(ViewGroup.java:4499)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at android.view.View.updateDisplayListIfDirty(View.java:21838)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at android.view.ViewGroup.recreateChildDisplayList(ViewGroup.java:4526)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at android.view.ViewGroup.dispatchGetDisplayList(ViewGroup.java:4499)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at android.view.View.updateDisplayListIfDirty(View.java:21838)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at android.view.ThreadedRenderer.updateViewTreeDisplayList(ThreadedRenderer.java:534)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at android.view.ThreadedRenderer.updateRootDisplayList(ThreadedRenderer.java:542)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at android.view.ThreadedRenderer.draw(ThreadedRenderer.java:625)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at android.view.ViewRootImpl.draw(ViewRootImpl.java:4657)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at android.view.ViewRootImpl.performDraw(ViewRootImpl.java:4375)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at android.view.ViewRootImpl.performTraversals(ViewRootImpl.java:3486)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at android.view.ViewRootImpl.doTraversal(ViewRootImpl.java:2277)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at android.view.ViewRootImpl$TraversalRunnable.run(ViewRootImpl.java:9037)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at android.view.Choreographer$CallbackRecord.run(Choreographer.java:1142)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at android.view.Choreographer.doCallbacks(Choreographer.java:946)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at android.view.Choreographer.doFrame(Choreographer.java:875)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:1127)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at android.os.Handler.handleCallback(Handler.java:938)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at android.os.Handler.dispatchMessage(Handler.java:99)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at android.os.Looper.loopOnce(Looper.java:210)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at android.os.Looper.loop(Looper.java:299)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at android.app.ActivityThread.main(ActivityThread.java:8293)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at java.lang.reflect.Method.invoke(Native method)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:556)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1045)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669] 
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669] "HeapTaskDaemon" prio=5 tid=10 WaitingForTaskProcessor
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | group="" sCount=1 ucsCount=0 flags=1 obj=0x12e00b58 self=0xef079200
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | sysTid=32005 nice=4 cgrp=default sched=0/0 handle=0xcb0c11c0
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | state=S schedstat=( 0 0 0 ) utm=16 stm=0 core=0 HZ=100
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | stack=0xcafbe000-0xcafc0000 stackSize=1036KB
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | held mutexes=
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #00 pc 0005bf90  /apex/com.android.runtime/lib/bionic/libc.so (syscall+32)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #01 pc 00149515  /apex/com.android.art/lib/libart.so (art::ConditionVariable::TimedWait(art::Thread*, long long, int)+116)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #02 pc 00227e09  /apex/com.android.art/lib/libart.so (art::gc::TaskProcessor::GetTask(art::Thread*)+288)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #03 pc 002284dd  /apex/com.android.art/lib/libart.so (art::gc::TaskProcessor::RunAllTasks(art::Thread*)+48)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at dalvik.system.VMRuntime.runHeapTasks(Native method)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at java.lang.Daemons$HeapTaskDaemon.runInternal(Daemons.java:531)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at java.lang.Daemons$Daemon.run(Daemons.java:139)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at java.lang.Thread.run(Thread.java:920)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669] 
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669] "ReferenceQueueDaemon" prio=5 tid=11 Waiting
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | group="" sCount=1 ucsCount=0 flags=1 obj=0x12e00390 self=0xeec45000
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | sysTid=32006 nice=4 cgrp=default sched=0/0 handle=0xcafb81c0
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | state=S schedstat=( 0 0 0 ) utm=0 stm=0 core=4 HZ=100
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | stack=0xcaeb5000-0xcaeb7000 stackSize=1036KB
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | held mutexes=
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #00 pc 0005bf8c  /apex/com.android.runtime/lib/bionic/libc.so (syscall+28)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #01 pc 00149241  /apex/com.android.art/lib/libart.so (art::ConditionVariable::WaitHoldingLocks(art::Thread*)+88)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #02 pc 00371e67  /apex/com.android.art/lib/libart.so (art::Monitor::Wait(art::Thread*, long long, int, bool, art::ThreadState)+466)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #03 pc 00373119  /apex/com.android.art/lib/libart.so (art::Monitor::Wait(art::Thread*, art::ObjPtr<art::mirror::Object>, long long, int, bool, art::ThreadState)+184)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #04 pc 0038933d  /apex/com.android.art/lib/libart.so (art::Object_waitJI(_JNIEnv*, _jobject*, long long, int)+36)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at java.lang.Object.wait(Native method)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   - waiting on <0x0f74f746> (a java.lang.Class<java.lang.ref.ReferenceQueue>)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at java.lang.Object.wait(Object.java:442)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at java.lang.Object.wait(Object.java:568)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at java.lang.Daemons$ReferenceQueueDaemon.runInternal(Daemons.java:217)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   - locked <0x0f74f746> (a java.lang.Class<java.lang.ref.ReferenceQueue>)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at java.lang.Daemons$Daemon.run(Daemons.java:139)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at java.lang.Thread.run(Thread.java:920)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669] 
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669] "FinalizerDaemon" prio=5 tid=12 Waiting
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | group="" sCount=1 ucsCount=0 flags=1 obj=0x12e00408 self=0xeec45e00
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | sysTid=32007 nice=4 cgrp=default sched=0/0 handle=0xcaeaf1c0
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | state=S schedstat=( 0 0 0 ) utm=0 stm=0 core=0 HZ=100
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | stack=0xcadac000-0xcadae000 stackSize=1036KB
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | held mutexes=
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #00 pc 0005bf8c  /apex/com.android.runtime/lib/bionic/libc.so (syscall+28)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #01 pc 00149241  /apex/com.android.art/lib/libart.so (art::ConditionVariable::WaitHoldingLocks(art::Thread*)+88)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #02 pc 00371e67  /apex/com.android.art/lib/libart.so (art::Monitor::Wait(art::Thread*, long long, int, bool, art::ThreadState)+466)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #03 pc 00373119  /apex/com.android.art/lib/libart.so (art::Monitor::Wait(art::Thread*, art::ObjPtr<art::mirror::Object>, long long, int, bool, art::ThreadState)+184)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #04 pc 0038933d  /apex/com.android.art/lib/libart.so (art::Object_waitJI(_JNIEnv*, _jobject*, long long, int)+36)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at java.lang.Object.wait(Native method)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   - waiting on <0x0e48cd07> (a java.lang.Object)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at java.lang.Object.wait(Object.java:442)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:190)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   - locked <0x0e48cd07> (a java.lang.Object)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:211)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at java.lang.Daemons$FinalizerDaemon.runInternal(Daemons.java:273)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at java.lang.Daemons$Daemon.run(Daemons.java:139)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at java.lang.Thread.run(Thread.java:920)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669] 
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669] "FinalizerWatchdogDaemon" prio=5 tid=13 Sleeping
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | group="" sCount=1 ucsCount=0 flags=1 obj=0x12e00480 self=0xeec46c00
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | sysTid=32008 nice=4 cgrp=default sched=0/0 handle=0xcada61c0
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | state=S schedstat=( 0 0 0 ) utm=0 stm=0 core=0 HZ=100
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | stack=0xcaca3000-0xcaca5000 stackSize=1036KB
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | held mutexes=
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #00 pc 0005bf90  /apex/com.android.runtime/lib/bionic/libc.so (syscall+32)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #01 pc 00149515  /apex/com.android.art/lib/libart.so (art::ConditionVariable::TimedWait(art::Thread*, long long, int)+116)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #02 pc 00371e79  /apex/com.android.art/lib/libart.so (art::Monitor::Wait(art::Thread*, long long, int, bool, art::ThreadState)+484)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #03 pc 00373119  /apex/com.android.art/lib/libart.so (art::Monitor::Wait(art::Thread*, art::ObjPtr<art::mirror::Object>, long long, int, bool, art::ThreadState)+184)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #04 pc 0038f08f  /apex/com.android.art/lib/libart.so (art::Thread_sleep(_JNIEnv*, _jclass*, _jobject*, long long, int)+54)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at java.lang.Thread.sleep(Native method)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   - sleeping on <0x0de19e34> (a java.lang.Object)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at java.lang.Thread.sleep(Thread.java:451)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   - locked <0x0de19e34> (a java.lang.Object)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at java.lang.Thread.sleep(Thread.java:356)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at java.lang.Daemons$FinalizerWatchdogDaemon.sleepForNanos(Daemons.java:390)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at java.lang.Daemons$FinalizerWatchdogDaemon.waitForFinalization(Daemons.java:419)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at java.lang.Daemons$FinalizerWatchdogDaemon.runInternal(Daemons.java:325)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at java.lang.Daemons$Daemon.run(Daemons.java:139)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at java.lang.Thread.run(Thread.java:920)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669] 
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669] "Binder:31989_1" prio=5 tid=14 Native
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | group="" sCount=1 ucsCount=0 flags=1 obj=0x12e00500 self=0xee374000
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | sysTid=32010 nice=0 cgrp=default sched=0/0 handle=0xcab9f1c0
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | state=S schedstat=( 0 0 0 ) utm=0 stm=0 core=4 HZ=100
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | stack=0xcaaa4000-0xcaaa6000 stackSize=1004KB
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | held mutexes=
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #00 pc 0009964c  /apex/com.android.runtime/lib/bionic/libc.so (__ioctl+12)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #01 pc 0006738b  /apex/com.android.runtime/lib/bionic/libc.so (ioctl+26)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #02 pc 0003ad8f  /system/lib/libbinder.so (android::IPCThreadState::talkWithDriver(bool)+226)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #03 pc 0003af85  /system/lib/libbinder.so (android::IPCThreadState::getAndExecuteCommand()+8)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #04 pc 0003b6b9  /system/lib/libbinder.so (android::IPCThreadState::joinThreadPool(bool)+44)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #05 pc 0005815d  /system/lib/libbinder.so (android::PoolThread::threadLoop()+12)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #06 pc 0000d2fd  /system/lib/libutils.so (android::Thread::_threadLoop(void*)+168)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #07 pc 000804df  /system/lib/libandroid_runtime.so (android::AndroidRuntime::javaThreadShell(void*)+86)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #08 pc 0000ce37  /system/lib/libutils.so (thread_data_t::trampoline(thread_data_t const*)+262)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #09 pc 000a8e57  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+40)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #10 pc 00061dd3  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   (no managed stack frames)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669] 
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669] "Binder:31989_2" prio=5 tid=15 Native
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | group="" sCount=1 ucsCount=0 flags=1 obj=0x12e00578 self=0xee8f6e00
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | sysTid=32011 nice=0 cgrp=default sched=0/0 handle=0xcaa9e1c0
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | state=S schedstat=( 0 0 0 ) utm=2 stm=0 core=7 HZ=100
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | stack=0xca9a3000-0xca9a5000 stackSize=1004KB
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | held mutexes=
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #00 pc 0009964c  /apex/com.android.runtime/lib/bionic/libc.so (__ioctl+12)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #01 pc 0006738b  /apex/com.android.runtime/lib/bionic/libc.so (ioctl+26)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #02 pc 0003ad8f  /system/lib/libbinder.so (android::IPCThreadState::talkWithDriver(bool)+226)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #03 pc 0003af85  /system/lib/libbinder.so (android::IPCThreadState::getAndExecuteCommand()+8)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #04 pc 0003b6b9  /system/lib/libbinder.so (android::IPCThreadState::joinThreadPool(bool)+44)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #05 pc 0005815d  /system/lib/libbinder.so (android::PoolThread::threadLoop()+12)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #06 pc 0000d2fd  /system/lib/libutils.so (android::Thread::_threadLoop(void*)+168)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #07 pc 000804df  /system/lib/libandroid_runtime.so (android::AndroidRuntime::javaThreadShell(void*)+86)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #08 pc 0000ce37  /system/lib/libutils.so (thread_data_t::trampoline(thread_data_t const*)+262)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #09 pc 000a8e57  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+40)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #10 pc 00061dd3  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   (no managed stack frames)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669] 
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669] "Binder:31989_3" prio=5 tid=16 Native
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | group="" sCount=1 ucsCount=0 flags=1 obj=0x12e005f0 self=0xee1eec00
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | sysTid=32012 nice=0 cgrp=default sched=0/0 handle=0xca99d1c0
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | state=S schedstat=( 0 0 0 ) utm=2 stm=0 core=0 HZ=100
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | stack=0xca8a2000-0xca8a4000 stackSize=1004KB
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | held mutexes=
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #00 pc 0009964c  /apex/com.android.runtime/lib/bionic/libc.so (__ioctl+12)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #01 pc 0006738b  /apex/com.android.runtime/lib/bionic/libc.so (ioctl+26)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #02 pc 0003ad8f  /system/lib/libbinder.so (android::IPCThreadState::talkWithDriver(bool)+226)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #03 pc 0003af85  /system/lib/libbinder.so (android::IPCThreadState::getAndExecuteCommand()+8)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #04 pc 0003b6b9  /system/lib/libbinder.so (android::IPCThreadState::joinThreadPool(bool)+44)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #05 pc 0005815d  /system/lib/libbinder.so (android::PoolThread::threadLoop()+12)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #06 pc 0000d2fd  /system/lib/libutils.so (android::Thread::_threadLoop(void*)+168)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #07 pc 000804df  /system/lib/libandroid_runtime.so (android::AndroidRuntime::javaThreadShell(void*)+86)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #08 pc 0000ce37  /system/lib/libutils.so (thread_data_t::trampoline(thread_data_t const*)+262)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #09 pc 000a8e57  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+40)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #10 pc 00061dd3  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   (no managed stack frames)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669] 
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669] "Binder:31989_4" prio=5 tid=17 Native
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | group="" sCount=1 ucsCount=0 flags=1 obj=0x12e00668 self=0xee13fa00
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | sysTid=32014 nice=0 cgrp=default sched=0/0 handle=0xca7931c0
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | state=S schedstat=( 0 0 0 ) utm=1 stm=0 core=1 HZ=100
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | stack=0xca698000-0xca69a000 stackSize=1004KB
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | held mutexes=
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #00 pc 0009964c  /apex/com.android.runtime/lib/bionic/libc.so (__ioctl+12)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #01 pc 0006738b  /apex/com.android.runtime/lib/bionic/libc.so (ioctl+26)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #02 pc 0003ad8f  /system/lib/libbinder.so (android::IPCThreadState::talkWithDriver(bool)+226)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #03 pc 0003af85  /system/lib/libbinder.so (android::IPCThreadState::getAndExecuteCommand()+8)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #04 pc 0003b6b9  /system/lib/libbinder.so (android::IPCThreadState::joinThreadPool(bool)+44)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #05 pc 0005815d  /system/lib/libbinder.so (android::PoolThread::threadLoop()+12)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #06 pc 0000d2fd  /system/lib/libutils.so (android::Thread::_threadLoop(void*)+168)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #07 pc 000804df  /system/lib/libandroid_runtime.so (android::AndroidRuntime::javaThreadShell(void*)+86)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #08 pc 0000ce37  /system/lib/libutils.so (thread_data_t::trampoline(thread_data_t const*)+262)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #09 pc 000a8e57  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+40)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #10 pc 00061dd3  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   (no managed stack frames)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669] 
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669] "Profile Saver" prio=5 tid=19 Native
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | group="" sCount=1 ucsCount=0 flags=1 obj=0x12e006e0 self=0xedfc0600
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | sysTid=32017 nice=9 cgrp=default sched=0/0 handle=0xc9bbd1c0
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | state=S schedstat=( 0 0 0 ) utm=1 stm=0 core=1 HZ=100
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | stack=0xc9ac2000-0xc9ac4000 stackSize=1004KB
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | held mutexes=
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #00 pc 0005bf8c  /apex/com.android.runtime/lib/bionic/libc.so (syscall+28)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #01 pc 00149241  /apex/com.android.art/lib/libart.so (art::ConditionVariable::WaitHoldingLocks(art::Thread*)+88)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #02 pc 002779d9  /apex/com.android.art/lib/libart.so (art::ProfileSaver::Run()+352)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #03 pc 0027b9d7  /apex/com.android.art/lib/libart.so (art::ProfileSaver::RunProfileSaverThread(void*)+106)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #04 pc 000a8e57  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+40)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #05 pc 00061dd3  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   (no managed stack frames)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669] 
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669] "RenderThread" prio=10 tid=20 Native
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | group="" sCount=1 ucsCount=0 flags=1 obj=0x12e00758 self=0xee0fa800
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | sysTid=32020 nice=-10 cgrp=default sched=0/0 handle=0xc99841c0
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | state=S schedstat=( 0 0 0 ) utm=15 stm=3 core=3 HZ=100
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | stack=0xc9889000-0xc988b000 stackSize=1004KB
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | held mutexes=
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #00 pc 0005bf90  /apex/com.android.runtime/lib/bionic/libc.so (syscall+32)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #01 pc 000617a3  /apex/com.android.runtime/lib/bionic/libc.so (__futex_wait_ex(void volatile*, bool, int, bool, timespec const*)+94)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #02 pc 000a84b7  /apex/com.android.runtime/lib/bionic/libc.so (pthread_cond_timedwait+76)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #03 pc 0003d4ed  /system/lib/libc++.so (std::__1::condition_variable::__do_timed_wait(std::__1::unique_lock<std::__1::mutex>&, std::__1::chrono::time_point<std::__1::chrono::system_clock, std::__1::chrono::duration<long long, std::__1::ratio<1ll, 1000000000ll> > >)+132)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #04 pc 0005d545  /system/lib/libgui.so (android::BufferQueueProducer::waitForFreeSlotThenRelock(android::BufferQueueProducer::FreeSlotCaller, std::__1::unique_lock<std::__1::mutex>&, int*) const+644)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #05 pc 0005d7e9  /system/lib/libgui.so (android::BufferQueueProducer::dequeueBuffer(int*, android::sp<android::Fence>*, unsigned int, unsigned int, int, unsigned long long, unsigned long long*, android::FrameEventHistoryDelta*)+484)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #06 pc 000a1ebf  /system/lib/libgui.so (android::Surface::dequeueBuffer(ANativeWindowBuffer**, int*)+286)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #07 pc 00321de7  /system/lib/libhwui.so (android::uirenderer::renderthread::ReliableSurface::hook_dequeueBuffer(ANativeWindow*, int (*)(ANativeWindow*, ANativeWindowBuffer**, int*), void*, ANativeWindowBuffer**, int*)+42)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #08 pc 000a0cb7  /system/lib/libgui.so (android::Surface::hook_dequeueBuffer(ANativeWindow*, ANativeWindowBuffer**, int*)+58)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #09 pc 0000ca7b  /vendor/lib/egl/eglSubDriverAndroid.so (???)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #10 pc 0000c511  /vendor/lib/egl/eglSubDriverAndroid.so (???)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #11 pc 001fc571  /vendor/lib/egl/libGLESv2_adreno.so (!!!0000!59bef17764eba5e897c3f9ebcb5264!f9286358ab9!+216)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #12 pc 001e4c3d  /vendor/lib/egl/libGLESv2_adreno.so (!!!0000!76a447c8b7e9705dc6af2d47a4b56b!f9286358ab9!+160)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #13 pc 00014d75  /system/lib/libEGL.so (android::eglQuerySurfaceImpl(void*, void*, int, int*)+116)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #14 pc 001f858f  /system/lib/libhwui.so (android::uirenderer::renderthread::EglManager::beginFrame(void*)+122)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #15 pc 001f84f1  /system/lib/libhwui.so (android::uirenderer::skiapipeline::SkiaOpenGLPipeline::getFrame()+8)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #16 pc 0022c209  /system/lib/libhwui.so (android::uirenderer::renderthread::CanvasContext::draw()+328)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #17 pc 0022b59b  /system/lib/libhwui.so (_ZNSt3__110__function6__funcIZN7android10uirenderer12renderthread13DrawFrameTask11postAndWaitEvE3$_0NS_9allocatorIS6_EEFvvEEclEv$c1671e787f244890c877724752face20+1162)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #18 pc 00234ab9  /system/lib/libhwui.so (android::uirenderer::WorkQueue::process()+112)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #19 pc 00234939  /system/lib/libhwui.so (android::uirenderer::renderthread::RenderThread::threadLoop()+52)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #20 pc 0000d2fd  /system/lib/libutils.so (android::Thread::_threadLoop(void*)+168)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #21 pc 0000ce37  /system/lib/libutils.so (thread_data_t::trampoline(thread_data_t const*)+262)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #22 pc 000a8e57  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+40)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #23 pc 00061dd3  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   (no managed stack frames)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669] 
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669] "Binder:interceptor" prio=7 tid=21 Native
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | group="" sCount=1 ucsCount=0 flags=1 obj=0x12e007d0 self=0xeec47a00
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | sysTid=32023 nice=-4 cgrp=default sched=0/0 handle=0xc71a01c0
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | state=S schedstat=( 0 0 0 ) utm=5 stm=1 core=4 HZ=100
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | stack=0xc709d000-0xc709f000 stackSize=1036KB
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | held mutexes=
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #00 pc 0009a724  /apex/com.android.runtime/lib/bionic/libc.so (__epoll_pwait+20)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #01 pc 0006bf85  /apex/com.android.runtime/lib/bionic/libc.so (epoll_wait+16)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #02 pc 000100c9  /system/lib/libutils.so (android::Looper::pollInner(int)+124)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #03 pc 0000fff3  /system/lib/libutils.so (android::Looper::pollOnce(int, int*, int*, void**)+62)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #04 pc 000e3819  /system/lib/libandroid_runtime.so (android::android_os_MessageQueue_nativePollOnce(_JNIEnv*, _jobject*, long long, int)+26)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #05 pc 000f4c8d  /apex/com.android.art/lib/libart.so (art_quick_generic_jni_trampoline+44)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #06 pc 000ec460  /apex/com.android.art/lib/libart.so (nterp_helper+4528)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #07 pc 0113f8ea  /memfd:/system/framework/arm/boot-framework.vdex (deleted) (???)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #08 pc 000ebda0  /apex/com.android.art/lib/libart.so (nterp_helper+2800)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #09 pc 0113dcec  /memfd:/system/framework/arm/boot-framework.vdex (deleted) (???)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #10 pc 000eb2e8  /apex/com.android.art/lib/libart.so (nterp_helper+56)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #11 pc 0113dcbc  /memfd:/system/framework/arm/boot-framework.vdex (deleted) (???)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #12 pc 000eb2e8  /apex/com.android.art/lib/libart.so (nterp_helper+56)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #13 pc 01119134  /memfd:/system/framework/arm/boot-framework.vdex (deleted) (???)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #14 pc 000f01d5  /apex/com.android.art/lib/libart.so (art_quick_invoke_stub_internal+68)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #15 pc 0050988b  /apex/com.android.art/lib/libart.so (art_quick_invoke_stub+282)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #16 pc 00143a35  /apex/com.android.art/lib/libart.so (art::ArtMethod::Invoke(art::Thread*, unsigned int*, unsigned int, art::JValue*, char const*)+140)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #17 pc 00407263  /apex/com.android.art/lib/libart.so (art::JValue art::InvokeVirtualOrInterfaceWithJValues<art::ArtMethod*>(art::ScopedObjectAccessAlreadyRunnable const&, _jobject*, art::ArtMethod*, jvalue const*)+366)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #18 pc 0040736f  /apex/com.android.art/lib/libart.so (art::JValue art::InvokeVirtualOrInterfaceWithJValues<_jmethodID*>(art::ScopedObjectAccessAlreadyRunnable const&, _jobject*, _jmethodID*, jvalue const*)+42)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #19 pc 00447a73  /apex/com.android.art/lib/libart.so (art::Thread::CreateCallback(void*)+1030)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #20 pc 000a8e57  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+40)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #21 pc 00061dd3  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at android.os.MessageQueue.nativePollOnce(Native method)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at android.os.MessageQueue.next(MessageQueue.java:340)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at android.os.Looper.loopOnce(Looper.java:168)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at android.os.Looper.loop(Looper.java:299)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at android.os.HandlerThread.run(HandlerThread.java:67)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669] 
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669] "AsyncTask #2" prio=5 tid=23 Waiting
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | group="" sCount=1 ucsCount=0 flags=1 obj=0x12e008b8 self=0xedb20400
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | sysTid=32026 nice=0 cgrp=default sched=0/0 handle=0xc648f1c0
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | state=S schedstat=( 0 0 0 ) utm=0 stm=0 core=1 HZ=100
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | stack=0xc638c000-0xc638e000 stackSize=1036KB
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | held mutexes=
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #00 pc 0005bf8c  /apex/com.android.runtime/lib/bionic/libc.so (syscall+28)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #01 pc 004467c3  /apex/com.android.art/lib/libart.so (art::Thread::Park(bool, long long)+538)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #02 pc 0039ccf3  /apex/com.android.art/lib/libart.so (art::Unsafe_park(_JNIEnv*, _jobject*, unsigned char, long long)+486)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at sun.misc.Unsafe.park(Native method)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   - waiting on an unknown object
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at java.util.concurrent.locks.LockSupport.park(LockSupport.java:190)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:459)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:362)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at java.util.concurrent.SynchronousQueue.take(SynchronousQueue.java:920)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1092)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1152)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at java.lang.Thread.run(Thread.java:920)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669] 
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669] "hwuiTask0" prio=6 tid=24 Native
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | group="" sCount=1 ucsCount=0 flags=1 obj=0x12e00980 self=0xe6113000
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | sysTid=32028 nice=-2 cgrp=default sched=0/0 handle=0xc604b1c0
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | state=S schedstat=( 0 0 0 ) utm=0 stm=0 core=1 HZ=100
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | stack=0xc5f50000-0xc5f52000 stackSize=1004KB
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | held mutexes=
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #00 pc 0005bf8c  /apex/com.android.runtime/lib/bionic/libc.so (syscall+28)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #01 pc 000617a3  /apex/com.android.runtime/lib/bionic/libc.so (__futex_wait_ex(void volatile*, bool, int, bool, timespec const*)+94)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #02 pc 000a8451  /apex/com.android.runtime/lib/bionic/libc.so (pthread_cond_wait+32)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #03 pc 0003d43d  /system/lib/libc++.so (std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&)+8)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #04 pc 002b36b5  /system/lib/libhwui.so (android::uirenderer::CommonPool::workerLoop()+72)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #05 pc 002b361d  /system/lib/libhwui.so (void* std::__1::__thread_proxy<std::__1::tuple<std::__1::unique_ptr<std::__1::__thread_struct, std::__1::default_delete<std::__1::__thread_struct> >, android::uirenderer::CommonPool::CommonPool()::$_0> >(void*)+128)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #06 pc 000a8e57  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+40)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #07 pc 00061dd3  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   (no managed stack frames)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669] 
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669] "hwuiTask1" prio=6 tid=25 Native
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | group="" sCount=1 ucsCount=0 flags=1 obj=0x12e009f8 self=0xe60dd000
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | sysTid=32029 nice=-2 cgrp=default sched=0/0 handle=0xc5f4a1c0
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | state=S schedstat=( 0 0 0 ) utm=0 stm=0 core=0 HZ=100
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | stack=0xc5e4f000-0xc5e51000 stackSize=1004KB
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | held mutexes=
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #00 pc 0005bf8c  /apex/com.android.runtime/lib/bionic/libc.so (syscall+28)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #01 pc 000617a3  /apex/com.android.runtime/lib/bionic/libc.so (__futex_wait_ex(void volatile*, bool, int, bool, timespec const*)+94)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #02 pc 000a8451  /apex/com.android.runtime/lib/bionic/libc.so (pthread_cond_wait+32)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #03 pc 0003d43d  /system/lib/libc++.so (std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&)+8)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #04 pc 002b36b5  /system/lib/libhwui.so (android::uirenderer::CommonPool::workerLoop()+72)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #05 pc 002b361d  /system/lib/libhwui.so (void* std::__1::__thread_proxy<std::__1::tuple<std::__1::unique_ptr<std::__1::__thread_struct, std::__1::default_delete<std::__1::__thread_struct> >, android::uirenderer::CommonPool::CommonPool()::$_0> >(void*)+128)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #06 pc 000a8e57  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+40)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #07 pc 00061dd3  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   (no managed stack frames)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669] 
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669] "queued-work-looper" prio=6 tid=18 Native
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | group="" sCount=1 ucsCount=0 flags=1 obj=0x12e00a70 self=0xc6617400
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | sysTid=32045 nice=-2 cgrp=default sched=0/0 handle=0xca89c1c0
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | state=S schedstat=( 0 0 0 ) utm=0 stm=0 core=0 HZ=100
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | stack=0xca799000-0xca79b000 stackSize=1036KB
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | held mutexes=
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #00 pc 0009a724  /apex/com.android.runtime/lib/bionic/libc.so (__epoll_pwait+20)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #01 pc 0006bf85  /apex/com.android.runtime/lib/bionic/libc.so (epoll_wait+16)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #02 pc 000100c9  /system/lib/libutils.so (android::Looper::pollInner(int)+124)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #03 pc 0000fff3  /system/lib/libutils.so (android::Looper::pollOnce(int, int*, int*, void**)+62)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #04 pc 000e3819  /system/lib/libandroid_runtime.so (android::android_os_MessageQueue_nativePollOnce(_JNIEnv*, _jobject*, long long, int)+26)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #05 pc 000f4c8d  /apex/com.android.art/lib/libart.so (art_quick_generic_jni_trampoline+44)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #06 pc 000ec460  /apex/com.android.art/lib/libart.so (nterp_helper+4528)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #07 pc 0113f8ea  /memfd:/system/framework/arm/boot-framework.vdex (deleted) (???)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #08 pc 000ebda0  /apex/com.android.art/lib/libart.so (nterp_helper+2800)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #09 pc 0113dcec  /memfd:/system/framework/arm/boot-framework.vdex (deleted) (???)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #10 pc 000eb2e8  /apex/com.android.art/lib/libart.so (nterp_helper+56)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #11 pc 0113dcbc  /memfd:/system/framework/arm/boot-framework.vdex (deleted) (???)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #12 pc 000eb2e8  /apex/com.android.art/lib/libart.so (nterp_helper+56)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #13 pc 01119134  /memfd:/system/framework/arm/boot-framework.vdex (deleted) (???)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #14 pc 000f01d5  /apex/com.android.art/lib/libart.so (art_quick_invoke_stub_internal+68)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #15 pc 0050988b  /apex/com.android.art/lib/libart.so (art_quick_invoke_stub+282)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #16 pc 00143a35  /apex/com.android.art/lib/libart.so (art::ArtMethod::Invoke(art::Thread*, unsigned int*, unsigned int, art::JValue*, char const*)+140)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #17 pc 00407263  /apex/com.android.art/lib/libart.so (art::JValue art::InvokeVirtualOrInterfaceWithJValues<art::ArtMethod*>(art::ScopedObjectAccessAlreadyRunnable const&, _jobject*, art::ArtMethod*, jvalue const*)+366)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #18 pc 0040736f  /apex/com.android.art/lib/libart.so (art::JValue art::InvokeVirtualOrInterfaceWithJValues<_jmethodID*>(art::ScopedObjectAccessAlreadyRunnable const&, _jobject*, _jmethodID*, jvalue const*)+42)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #19 pc 00447a73  /apex/com.android.art/lib/libart.so (art::Thread::CreateCallback(void*)+1030)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #20 pc 000a8e57  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+40)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #21 pc 00061dd3  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at android.os.MessageQueue.nativePollOnce(Native method)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at android.os.MessageQueue.next(MessageQueue.java:340)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at android.os.Looper.loopOnce(Looper.java:168)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at android.os.Looper.loop(Looper.java:299)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at android.os.HandlerThread.run(HandlerThread.java:67)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669] 
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669] "31989-ScoutStateMachine" prio=5 tid=2 Native
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | group="" sCount=1 ucsCount=0 flags=1 obj=0x12d001d8 self=0xee8f8a00
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | sysTid=2848 nice=0 cgrp=default sched=0/0 handle=0xc5b6c1c0
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | state=S schedstat=( 0 0 0 ) utm=0 stm=0 core=2 HZ=100
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | stack=0xc5a69000-0xc5a6b000 stackSize=1036KB
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | held mutexes=
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #00 pc 0009a724  /apex/com.android.runtime/lib/bionic/libc.so (__epoll_pwait+20)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #01 pc 0006bf85  /apex/com.android.runtime/lib/bionic/libc.so (epoll_wait+16)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #02 pc 000100c9  /system/lib/libutils.so (android::Looper::pollInner(int)+124)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #03 pc 0000fff3  /system/lib/libutils.so (android::Looper::pollOnce(int, int*, int*, void**)+62)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #04 pc 000e3819  /system/lib/libandroid_runtime.so (android::android_os_MessageQueue_nativePollOnce(_JNIEnv*, _jobject*, long long, int)+26)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #05 pc 000f4c8d  /apex/com.android.art/lib/libart.so (art_quick_generic_jni_trampoline+44)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #06 pc 000ec460  /apex/com.android.art/lib/libart.so (nterp_helper+4528)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #07 pc 0113f8ea  /memfd:/system/framework/arm/boot-framework.vdex (deleted) (???)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #08 pc 000ebda0  /apex/com.android.art/lib/libart.so (nterp_helper+2800)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #09 pc 0113dcec  /memfd:/system/framework/arm/boot-framework.vdex (deleted) (???)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #10 pc 000eb2e8  /apex/com.android.art/lib/libart.so (nterp_helper+56)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #11 pc 0113dcbc  /memfd:/system/framework/arm/boot-framework.vdex (deleted) (???)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #12 pc 000eb2e8  /apex/com.android.art/lib/libart.so (nterp_helper+56)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #13 pc 01119134  /memfd:/system/framework/arm/boot-framework.vdex (deleted) (???)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #14 pc 000f01d5  /apex/com.android.art/lib/libart.so (art_quick_invoke_stub_internal+68)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #15 pc 0050988b  /apex/com.android.art/lib/libart.so (art_quick_invoke_stub+282)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #16 pc 00143a35  /apex/com.android.art/lib/libart.so (art::ArtMethod::Invoke(art::Thread*, unsigned int*, unsigned int, art::JValue*, char const*)+140)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #17 pc 00407263  /apex/com.android.art/lib/libart.so (art::JValue art::InvokeVirtualOrInterfaceWithJValues<art::ArtMethod*>(art::ScopedObjectAccessAlreadyRunnable const&, _jobject*, art::ArtMethod*, jvalue const*)+366)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #18 pc 0040736f  /apex/com.android.art/lib/libart.so (art::JValue art::InvokeVirtualOrInterfaceWithJValues<_jmethodID*>(art::ScopedObjectAccessAlreadyRunnable const&, _jobject*, _jmethodID*, jvalue const*)+42)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #19 pc 00447a73  /apex/com.android.art/lib/libart.so (art::Thread::CreateCallback(void*)+1030)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #20 pc 000a8e57  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+40)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #21 pc 00061dd3  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at android.os.MessageQueue.nativePollOnce(Native method)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at android.os.MessageQueue.next(MessageQueue.java:340)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at android.os.Looper.loopOnce(Looper.java:168)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at android.os.Looper.loop(Looper.java:299)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at android.os.HandlerThread.run(HandlerThread.java:67)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669] 
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669] Aborting thread:
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669] "Thread-3" prio=5 tid=4 Native
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | group="" sCount=0 ucsCount=0 flags=0 obj=0x12cd11a8 self=0xefe83600
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | sysTid=2870 nice=0 cgrp=default sched=0/0 handle=0xc1d5a1c0
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | state=R schedstat=( 0 0 0 ) utm=9 stm=0 core=7 HZ=100
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | stack=0xc1c57000-0xc1c59000 stackSize=1036KB
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   | held mutexes= "abort lock"
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #00 pc 00375931  /apex/com.android.art/lib/libart.so (art::DumpNativeStack(std::__1::basic_ostream<char, std::__1::char_traits<char> >&, int, BacktraceMap*, char const*, art::ArtMethod*, void*, bool)+76)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #01 pc 0044df57  /apex/com.android.art/lib/libart.so (art::Thread::DumpStack(std::__1::basic_ostream<char, std::__1::char_traits<char> >&, bool, BacktraceMap*, bool) const+214)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #02 pc 0041cce3  /apex/com.android.art/lib/libart.so (art::AbortState::DumpThread(std::__1::basic_ostream<char, std::__1::char_traits<char> >&, art::Thread*) const+38)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #03 pc 0040cc0d  /apex/com.android.art/lib/libart.so (art::Runtime::Abort(char const*)+1948)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #04 pc 0000f59d  /apex/com.android.art/lib/libbase.so (android::base::SetAborter(std::__1::function<void (char const*)>&&)::$_3::__invoke(char const*)+48)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #05 pc 0000eee9  /apex/com.android.art/lib/libbase.so (android::base::LogMessage::~LogMessage()+236)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #06 pc 0029eba9  /apex/com.android.art/lib/libart.so (art::JavaVMExt::JniAbort(char const*, char const*)+1900)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #07 pc 0029ec0f  /apex/com.android.art/lib/libart.so (art::JavaVMExt::JniAbortV(char const*, char const*, std::__va_list)+54)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #08 pc 00293e89  /apex/com.android.art/lib/libart.so (art::(anonymous namespace)::ScopedCheck::AbortF(char const*, ...)+40)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #09 pc 00292bfd  /apex/com.android.art/lib/libart.so (art::(anonymous namespace)::ScopedCheck::CheckPossibleHeapValue(art::ScopedObjectAccess&, char, art::(anonymous namespace)::JniValueType)+2604)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #10 pc 00291b97  /apex/com.android.art/lib/libart.so (art::(anonymous namespace)::ScopedCheck::Check(art::ScopedObjectAccess&, bool, char const*, art::(anonymous namespace)::JniValueType*)+646)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #11 pc 0027ea4f  /apex/com.android.art/lib/libart.so (art::(anonymous namespace)::CheckJNI::FindClass(_JNIEnv*, char const*) (.llvm.9212977709730125726)+526)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   native: #12 pc 00241907  /data/app/~~O3jlPs1WJYyPnMdZUT4a_Q==/ro.samp.mobile-oVhsWVn5wjVrCiMJj14C4Q==/lib/arm/libGTASA.so (???)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at java.lang.Runtime.nativeLoad(Native method)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at java.lang.Runtime.nativeLoad(Runtime.java:1121)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at java.lang.Runtime.loadLibrary0(Runtime.java:1075)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   - locked <0x0a307721> (a java.lang.Runtime)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at java.lang.Runtime.loadLibrary0(Runtime.java:998)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at java.lang.System.loadLibrary(System.java:1656)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at ro.samp.mobile.SAMP.loadLibraries(SAMP.java:14)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at ro.samp.mobile.MainActivity.lambda$onCreate$5$ro-samp-mobile-MainActivity(MainActivity.java:61)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at ro.samp.mobile.MainActivity$$ExternalSyntheticLambda6.run(D8$$SyntheticClass:0)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at java.lang.Thread.run(Thread.java:920)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669] Pending exception java.lang.UnsatisfiedLinkError: dlopen failed: library "/data/data/com.rockstargames.gtasa/lib/libsamp.so" not found
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at void java.lang.Runtime.load0(java.lang.Class, java.lang.String) (Runtime.java:929)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at void java.lang.System.load(java.lang.String) (System.java:1620)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at java.lang.String java.lang.Runtime.nativeLoad(java.lang.String, java.lang.ClassLoader, java.lang.Class) (Runtime.java:-2)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at java.lang.String java.lang.Runtime.nativeLoad(java.lang.String, java.lang.ClassLoader) (Runtime.java:1121)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at void java.lang.Runtime.loadLibrary0(java.lang.ClassLoader, java.lang.Class, java.lang.String) (Runtime.java:1075)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at void java.lang.Runtime.loadLibrary0(java.lang.Class, java.lang.String) (Runtime.java:998)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at void java.lang.System.loadLibrary(java.lang.String) (System.java:1656)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at void ro.samp.mobile.SAMP.loadLibraries() (SAMP.java:14)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at void ro.samp.mobile.MainActivity.lambda$onCreate$5$ro-samp-mobile-MainActivity() (MainActivity.java:61)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at void ro.samp.mobile.MainActivity$$ExternalSyntheticLambda6.run() (D8$$SyntheticClass:0)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669]   at void java.lang.Thread.run() (Thread.java:920)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:669] 
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:677] JNI DETECTED ERROR IN APPLICATION: JNI FindClass called with pending exception java.lang.UnsatisfiedLinkError: dlopen failed: library "/data/data/com.rockstargames.gtasa/lib/libsamp.so" not found
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:677]   at void java.lang.Runtime.load0(java.lang.Class, java.lang.String) (Runtime.java:929)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:677]   at void java.lang.System.load(java.lang.String) (System.java:1620)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:677]   at java.lang.String java.lang.Runtime.nativeLoad(java.lang.String, java.lang.ClassLoader, java.lang.Class) (Runtime.java:-2)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:677]   at java.lang.String java.lang.Runtime.nativeLoad(java.lang.String, java.lang.ClassLoader) (Runtime.java:1121)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:677]   at void java.lang.Runtime.loadLibrary0(java.lang.ClassLoader, java.lang.Class, java.lang.String) (Runtime.java:1075)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:677]   at void java.lang.Runtime.loadLibrary0(java.lang.Class, java.lang.String) (Runtime.java:998)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:677]   at void java.lang.System.loadLibrary(java.lang.String) (System.java:1656)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:677]   at void ro.samp.mobile.SAMP.loadLibraries() (SAMP.java:14)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:677]   at void ro.samp.mobile.MainActivity.lambda$onCreate$5$ro-samp-mobile-MainActivity() (MainActivity.java:61)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:677]   at void ro.samp.mobile.MainActivity$$ExternalSyntheticLambda6.run() (D8$$SyntheticClass:0)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:677]   at void java.lang.Thread.run() (Thread.java:920)
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:677] 
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:677]     in call to FindClass
-12-05 13:34:53.593 31989  2870 F ro.samp.mobile: runtime.cc:677]     from java.lang.String java.lang.Runtime.nativeLoad(java.lang.String, java.lang.ClassLoader, java.lang.Class)
---------- beginning of crash
+04-21 06:54:15.250   498   498 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 498 (init), pid 498 (init)
+04-21 06:54:19.839  1190  1190 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 1190 (init), pid 1190 (init)
+12-03 05:27:09.817  1585  1585 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 1585 (init), pid 1585 (init)
+12-03 05:27:44.479  4083  5911 E AndroidRuntime: FATAL EXCEPTION: IZatServiceContext
+12-03 05:27:47.310  3871  3871 E AndroidRuntime: FATAL EXCEPTION: main
+12-03 05:27:47.310  3871  3871 E AndroidRuntime: java.lang.UnsatisfiedLinkError: dlopen failed: "/system/product/app/com.qualcomm.qti.services.systemhelper/lib/arm64/libsystemhelper_jni.so" is too small to be an ELF executable: only found 44 bytes
+12-03 08:58:53.642 31345  1182 E AndroidRuntime: FATAL EXCEPTION: pool-2-thread-142
+12-03 08:59:02.742 31345 31345 E AndroidRuntime: FATAL EXCEPTION: main
+12-03 14:51:29.413  2946  5917 E AndroidRuntime: FATAL EXCEPTION: FrameworkReceiver
+12-03 21:26:48.706  1617  1696 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 1696 (DispatcherModul), pid 1617 (main)
+12-03 21:26:49.295 20347 20347 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+12-04 08:11:13.429 28567 28567 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 28567 (stargames.gtafl), pid 28567 (stargames.gtafl)
+12-04 08:11:14.186 28610 28610 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+12-04 08:11:46.051 29032 29032 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 29032 (stargames.gtafl), pid 29032 (stargames.gtafl)
+12-04 08:11:46.638 29081 29081 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+12-04 18:05:08.272 24946 25023 E AndroidRuntime: FATAL EXCEPTION: pool-2-thread-2
+12-04 19:55:46.780 16020 16020 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 16020 (stargames.gtafl), pid 16020 (stargames.gtafl)
+12-04 19:55:47.328 16058 16058 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+12-04 22:45:46.734  3726 12879 E AndroidRuntime: FATAL EXCEPTION: Thread-98
+12-05 08:18:48.794 18826 18826 E AndroidRuntime: FATAL EXCEPTION: main
+12-05 11:41:27.400 16296 16296 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 16296 (ro.samp.mobile), pid 16296 (ro.samp.mobile)
+12-05 11:41:28.922 16409 16409 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+12-05 11:41:28.922 16409 16409 F DEBUG   : Abort message: 'JNI DETECTED ERROR IN APPLICATION: JNI FindClass called with pending exception java.lang.UnsatisfiedLinkError: dlopen failed: library "/data/data/com.rockstargames.gtasa/lib/libsamp.so" not found
+12-05 11:42:56.913 17199 17199 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 17199 (ro.samp.mobile), pid 17199 (ro.samp.mobile)
+12-05 11:42:57.169 17232 17232 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+12-05 11:42:57.169 17232 17232 F DEBUG   : Abort message: 'JNI DETECTED ERROR IN APPLICATION: JNI FindClass called with pending exception java.lang.UnsatisfiedLinkError: dlopen failed: library "/data/data/com.rockstargames.gtasa/lib/libsamp.so" not found
+12-05 11:51:44.300 20607 20607 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 20607 (ro.samp.mobile), pid 20607 (ro.samp.mobile)
+12-05 11:51:44.825 20640 20640 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+12-05 11:51:44.825 20640 20640 F DEBUG   : Abort message: 'JNI DETECTED ERROR IN APPLICATION: JNI FindClass called with pending exception java.lang.UnsatisfiedLinkError: dlopen failed: library "/data/data/com.rockstargames.gtasa/lib/libsamp.so" not found
+12-05 11:52:38.129 20786 20786 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 20786 (ro.samp.mobile), pid 20786 (ro.samp.mobile)
+12-05 11:52:38.382 20819 20819 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+12-05 11:52:38.382 20819 20819 F DEBUG   : Abort message: 'JNI DETECTED ERROR IN APPLICATION: JNI FindClass called with pending exception java.lang.UnsatisfiedLinkError: dlopen failed: library "/data/data/com.rockstargames.gtasa/lib/libsamp.so" not found
+12-05 11:53:11.156 20923 20923 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 20923 (ro.samp.mobile), pid 20923 (ro.samp.mobile)
+12-05 11:53:11.399 20958 20958 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+12-05 11:53:11.401 20958 20958 F DEBUG   : Abort message: 'JNI DETECTED ERROR IN APPLICATION: JNI FindClass called with pending exception java.lang.UnsatisfiedLinkError: dlopen failed: library "/data/data/com.rockstargames.gtasa/lib/libsamp.so" not found
+12-05 11:55:27.744 21438 21438 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 21438 (ro.samp.mobile), pid 21438 (ro.samp.mobile)
+12-05 11:55:28.004 21477 21477 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+12-05 11:55:28.006 21477 21477 F DEBUG   : Abort message: 'JNI DETECTED ERROR IN APPLICATION: JNI FindClass called with pending exception java.lang.UnsatisfiedLinkError: dlopen failed: library "/data/data/com.rockstargames.gtasa/lib/libsamp.so" not found
+12-05 12:00:58.824 23339 23339 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 23339 (ro.samp.mobile), pid 23339 (ro.samp.mobile)
+12-05 12:00:59.104 23374 23374 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+12-05 12:00:59.104 23374 23374 F DEBUG   : Abort message: 'JNI DETECTED ERROR IN APPLICATION: JNI FindClass called with pending exception java.lang.UnsatisfiedLinkError: dlopen failed: library "/data/data/com.rockstargames.gtasa/lib/libsamp.so" not found
+12-05 12:01:11.842 23475 23475 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 23475 (ro.samp.mobile), pid 23475 (ro.samp.mobile)
+12-05 12:01:12.105 23511 23511 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+12-05 12:01:12.105 23511 23511 F DEBUG   : Abort message: 'JNI DETECTED ERROR IN APPLICATION: JNI FindClass called with pending exception java.lang.UnsatisfiedLinkError: dlopen failed: library "/data/data/com.rockstargames.gtasa/lib/libsamp.so" not found
+12-05 12:05:09.786 25457 25457 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 25457 (ro.samp.mobile), pid 25457 (ro.samp.mobile)
+12-05 12:05:10.144 25527 25527 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+12-05 12:05:10.144 25527 25527 F DEBUG   : Abort message: 'JNI DETECTED ERROR IN APPLICATION: JNI FindClass called with pending exception java.lang.UnsatisfiedLinkError: dlopen failed: library "/data/data/com.rockstargames.gtasa/lib/libsamp.so" not found
+12-05 12:05:30.226 25688 25688 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 25688 (ro.samp.mobile), pid 25688 (ro.samp.mobile)
+12-05 12:05:30.470 25753 25753 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+12-05 12:05:30.470 25753 25753 F DEBUG   : Abort message: 'JNI DETECTED ERROR IN APPLICATION: JNI FindClass called with pending exception java.lang.UnsatisfiedLinkError: dlopen failed: library "/data/data/com.rockstargames.gtasa/lib/libsamp.so" not found
+12-05 12:17:07.755 29613 29613 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 29613 (ro.samp.mobile), pid 29613 (ro.samp.mobile)
+12-05 12:17:08.216 29653 29653 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+12-05 12:17:08.216 29653 29653 F DEBUG   : Abort message: 'JNI DETECTED ERROR IN APPLICATION: JNI FindClass called with pending exception java.lang.UnsatisfiedLinkError: dlopen failed: library "/data/data/com.rockstargames.gtasa/lib/libsamp.so" not found
+12-05 12:25:37.447  1877  1877 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 1877 (ro.samp.mobile), pid 1877 (ro.samp.mobile)
+12-05 12:25:37.719  1954  1954 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+12-05 12:25:37.720  1954  1954 F DEBUG   : Abort message: 'JNI DETECTED ERROR IN APPLICATION: JNI FindClass called with pending exception java.lang.UnsatisfiedLinkError: dlopen failed: library "/data/data/com.rockstargames.gtasa/lib/libsamp.so" not found
+12-05 12:27:03.108  2663  2663 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 2663 (ro.samp.mobile), pid 2663 (ro.samp.mobile)
+12-05 12:27:03.542  2738  2738 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+12-05 12:27:03.543  2738  2738 F DEBUG   : Abort message: 'JNI DETECTED ERROR IN APPLICATION: JNI FindClass called with pending exception java.lang.UnsatisfiedLinkError: dlopen failed: library "/data/data/com.rockstargames.gtasa/lib/libsamp.so" not found
+12-05 12:28:03.408  3802  3802 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 3802 (ro.samp.mobile), pid 3802 (ro.samp.mobile)
+12-05 12:28:03.675  3889  3889 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+12-05 12:28:03.676  3889  3889 F DEBUG   : Abort message: 'JNI DETECTED ERROR IN APPLICATION: JNI FindClass called with pending exception java.lang.UnsatisfiedLinkError: dlopen failed: library "/data/data/com.rockstargames.gtasa/lib/libsamp.so" not found
+12-05 12:48:49.160 11126 11126 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 11126 (ro.samp.mobile), pid 11126 (ro.samp.mobile)
+12-05 12:48:49.566 11166 11166 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+12-05 12:48:49.566 11166 11166 F DEBUG   : Abort message: 'JNI DETECTED ERROR IN APPLICATION: JNI FindClass called with pending exception java.lang.UnsatisfiedLinkError: dlopen failed: library "/data/data/com.rockstargames.gtasa/lib/libsamp.so" not found
+12-05 12:49:07.912 11242 11242 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 11242 (ro.samp.mobile), pid 11242 (ro.samp.mobile)
+12-05 12:49:08.154 11280 11280 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+12-05 12:49:08.156 11280 11280 F DEBUG   : Abort message: 'JNI DETECTED ERROR IN APPLICATION: JNI FindClass called with pending exception java.lang.UnsatisfiedLinkError: dlopen failed: library "/data/data/com.rockstargames.gtasa/lib/libsamp.so" not found
+12-05 12:55:42.616 15059 15059 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 15059 (ro.samp.mobile), pid 15059 (ro.samp.mobile)
+12-05 12:55:43.319 15092 15092 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+12-05 12:55:43.319 15092 15092 F DEBUG   : Abort message: 'JNI DETECTED ERROR IN APPLICATION: JNI FindClass called with pending exception java.lang.UnsatisfiedLinkError: dlopen failed: library "/data/data/com.rockstargames.gtasa/lib/libsamp.so" not found
+12-05 13:05:58.959 20510 20510 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 20510 (ro.samp.mobile), pid 20510 (ro.samp.mobile)
+12-05 13:05:59.411 20547 20547 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+12-05 13:05:59.412 20547 20547 F DEBUG   : Abort message: 'JNI DETECTED ERROR IN APPLICATION: JNI FindClass called with pending exception java.lang.UnsatisfiedLinkError: dlopen failed: library "/data/data/com.rockstargames.gtasa/lib/libsamp.so" not found
+12-05 13:06:04.191 20600 20600 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 20600 (ro.samp.mobile), pid 20600 (ro.samp.mobile)
+12-05 13:06:04.460 20637 20637 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+12-05 13:06:04.460 20637 20637 F DEBUG   : Abort message: 'JNI DETECTED ERROR IN APPLICATION: JNI FindClass called with pending exception java.lang.UnsatisfiedLinkError: dlopen failed: library "/data/data/com.rockstargames.gtasa/lib/libsamp.so" not found
+12-05 13:09:15.179 22121 22121 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 22121 (ro.samp.mobile), pid 22121 (ro.samp.mobile)
+12-05 13:09:15.471 22157 22157 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+12-05 13:09:15.471 22157 22157 F DEBUG   : Abort message: 'JNI DETECTED ERROR IN APPLICATION: JNI FindClass called with pending exception java.lang.UnsatisfiedLinkError: dlopen failed: library "/data/data/com.rockstargames.gtasa/lib/libsamp.so" not found
+12-05 13:09:31.484 22444 22444 E AndroidRuntime: FATAL EXCEPTION: main
+12-05 13:09:31.484 22444 22444 E AndroidRuntime: java.lang.UnsatisfiedLinkError: No implementation found for void ro.samp.mobile.SAMP.saveSettings(java.lang.String, int, java.lang.String) (tried Java_ro_samp_mobile_SAMP_saveSettings and Java_ro_samp_mobile_SAMP_saveSettings__Ljava_lang_String_2ILjava_lang_String_2)
+12-05 13:10:12.595 22574 22739 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 22739 (Thread-4), pid 22574 (ro.samp.mobile)
+12-05 13:10:13.153 22744 22744 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+12-05 13:10:13.153 22744 22744 F DEBUG   : Abort message: 'JNI DETECTED ERROR IN APPLICATION: JNI FindClass called with pending exception java.lang.UnsatisfiedLinkError: dlopen failed: library "/data/data/com.rockstargames.gtasa/lib/libsamp.so" not found
+12-05 13:10:59.047 22769 23110 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 23110 (Thread-4), pid 22769 (ro.samp.mobile)
+12-05 13:10:59.421 23115 23115 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+12-05 13:10:59.421 23115 23115 F DEBUG   : Abort message: 'JNI DETECTED ERROR IN APPLICATION: JNI FindClass called with pending exception java.lang.UnsatisfiedLinkError: dlopen failed: library "/data/data/com.rockstargames.gtasa/lib/libsamp.so" not found
+12-05 13:16:58.005 26477 26704 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 26704 (Thread-3), pid 26477 (ro.samp.mobile)
+12-05 13:16:58.565 26711 26711 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+12-05 13:16:58.565 26711 26711 F DEBUG   : Abort message: 'JNI DETECTED ERROR IN APPLICATION: JNI FindClass called with pending exception java.lang.UnsatisfiedLinkError: dlopen failed: library "/data/data/com.rockstargames.gtasa/lib/libsamp.so" not found
+12-05 13:25:50.866 29213 29267 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 29267 (Thread-3), pid 29213 (ro.samp.mobile)
+12-05 13:25:51.484 29273 29273 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+12-05 13:25:51.484 29273 29273 F DEBUG   : Abort message: 'JNI DETECTED ERROR IN APPLICATION: JNI FindClass called with pending exception java.lang.UnsatisfiedLinkError: dlopen failed: library "/data/data/com.rockstargames.gtasa/lib/libsamp.so" not found
+12-05 13:26:24.763 29489 29536 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 29536 (Thread-3), pid 29489 (ro.samp.mobile)
+12-05 13:26:25.122 29543 29543 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+12-05 13:26:25.122 29543 29543 F DEBUG   : Abort message: 'JNI DETECTED ERROR IN APPLICATION: JNI FindClass called with pending exception java.lang.UnsatisfiedLinkError: dlopen failed: library "/data/data/com.rockstargames.gtasa/lib/libsamp.so" not found
+12-05 13:30:04.760 31167 31167 E AndroidRuntime: FATAL EXCEPTION: main
+12-05 13:30:04.760 31167 31167 E AndroidRuntime: java.lang.UnsatisfiedLinkError: No implementation found for void ro.samp.mobile.SAMP.saveSettings(java.lang.String, int, java.lang.String) (tried Java_ro_samp_mobile_SAMP_saveSettings and Java_ro_samp_mobile_SAMP_saveSettings__Ljava_lang_String_2ILjava_lang_String_2)
+12-05 13:30:36.238 31377 31512 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 31512 (Thread-3), pid 31377 (ro.samp.mobile)
+12-05 13:30:36.654 31517 31517 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+12-05 13:30:36.654 31517 31517 F DEBUG   : Abort message: 'JNI DETECTED ERROR IN APPLICATION: JNI FindClass called with pending exception java.lang.UnsatisfiedLinkError: dlopen failed: library "/data/data/com.rockstargames.gtasa/lib/libsamp.so" not found
+12-05 13:31:43.532 31767 31937 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 31937 (Thread-3), pid 31767 (ro.samp.mobile)
+12-05 13:31:43.914 31942 31942 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+12-05 13:31:43.914 31942 31942 F DEBUG   : Abort message: 'JNI DETECTED ERROR IN APPLICATION: JNI FindClass called with pending exception java.lang.UnsatisfiedLinkError: dlopen failed: library "/data/data/com.rockstargames.gtasa/lib/libsamp.so" not found
 12-05 13:34:53.594 31989  2870 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 2870 (Thread-3), pid 31989 (ro.samp.mobile)
-12-05 13:34:53.712 31989 32020 W RenderInspector: DequeueBuffer time out on ro.samp.mobile/ro.samp.mobile.MainActivity, count=4, avg=26 ms, max=54 ms.
+12-05 13:34:54.194  2889  2889 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+12-05 13:34:54.194  2889  2889 F DEBUG   : Abort message: 'JNI DETECTED ERROR IN APPLICATION: JNI FindClass called with pending exception java.lang.UnsatisfiedLinkError: dlopen failed: library "/data/data/com.rockstargames.gtasa/lib/libsamp.so" not found
+12-05 14:10:01.532 14965 15016 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 15016 (Thread-3), pid 14965 (ro.samp.mobile)
+12-05 14:10:02.157 15022 15022 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+12-05 14:10:02.157 15022 15022 F DEBUG   : Abort message: 'JNI DETECTED ERROR IN APPLICATION: JNI FindClass called with pending exception java.lang.UnsatisfiedLinkError: dlopen failed: library "/data/data/com.rockstargames.gtasa/lib/libsamp.so" not found
+12-05 14:10:50.520 15260 15341 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 15341 (Thread-3), pid 15260 (ro.samp.mobile)
+12-05 14:10:50.867 15347 15347 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+12-05 14:10:50.867 15347 15347 F DEBUG   : Abort message: 'JNI DETECTED ERROR IN APPLICATION: JNI FindClass called with pending exception java.lang.UnsatisfiedLinkError: dlopen failed: library "/data/data/com.rockstargames.gtasa/lib/libsamp.so" not found
+12-05 14:11:39.897 15561 15758 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 15758 (Thread-3), pid 15561 (ro.samp.mobile)
+12-05 14:11:40.323 15763 15763 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+12-05 14:11:40.323 15763 15763 F DEBUG   : Abort message: 'JNI DETECTED ERROR IN APPLICATION: JNI FindClass called with pending exception java.lang.UnsatisfiedLinkError: dlopen failed: library "/data/data/com.rockstargames.gtasa/lib/libsamp.so" not found
+12-05 14:14:03.177 17068 17068 E AndroidRuntime: FATAL EXCEPTION: main
+12-05 14:17:41.659 15789 18677 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 18677 (Thread-3), pid 15789 (ro.samp.mobile)
+12-05 14:17:42.371 18683 18683 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+12-05 14:17:42.371 18683 18683 F DEBUG   : Abort message: 'JNI DETECTED ERROR IN APPLICATION: JNI FindClass called with pending exception java.lang.UnsatisfiedLinkError: dlopen failed: library "/data/data/com.rockstargames.gtasa/lib/libsamp.so" not found
+12-05 14:17:50.535 18745 18822 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 18822 (Thread-3), pid 18745 (ro.samp.mobile)
+12-05 14:17:50.866 18828 18828 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+12-05 14:17:50.866 18828 18828 F DEBUG   : Abort message: 'JNI DETECTED ERROR IN APPLICATION: JNI FindClass called with pending exception java.lang.UnsatisfiedLinkError: dlopen failed: library "/data/data/com.rockstargames.gtasa/lib/libsamp.so" not found
+12-05 14:34:22.692 26064 26109 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 26109 (Thread-3), pid 26064 (ro.samp.mobile)
+12-05 14:34:23.200 26114 26114 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+12-05 14:34:23.200 26114 26114 F DEBUG   : Abort message: 'JNI DETECTED ERROR IN APPLICATION: JNI FindClass called with pending exception java.lang.UnsatisfiedLinkError: dlopen failed: library "/data/data/com.rockstargames.gtasa/lib/libsamp.so" not found
+12-05 14:53:07.073 31850 31903 F ro.samp.mobile: java_vm_ext.cc:579] JNI DETECTED ERROR IN APPLICATION: JNI FindClass called with pending exception java.lang.UnsatisfiedLinkError: dlopen failed: library "/data/data/com.rockstargames.gtasa/lib/libsamp.so" not found
+12-05 14:53:07.236 31850 31903 F ro.samp.mobile: runtime.cc:669] Pending exception java.lang.UnsatisfiedLinkError: dlopen failed: library "/data/data/com.rockstargames.gtasa/lib/libsamp.so" not found
+12-05 14:53:07.236 31850 31903 F ro.samp.mobile: runtime.cc:677] JNI DETECTED ERROR IN APPLICATION: JNI FindClass called with pending exception java.lang.UnsatisfiedLinkError: dlopen failed: library "/data/data/com.rockstargames.gtasa/lib/libsamp.so" not found
+12-05 14:53:07.236 31850 31903 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 31903 (Thread-3), pid 31850 (ro.samp.mobile)
+12-05 14:53:07.509 31909 31909 W unwind  : Failed to initialize DEX file support: dlopen failed: library "libdexfile.so" not found
+12-05 14:53:07.735 31909 31909 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+12-05 14:53:07.735 31909 31909 F DEBUG   : Abort message: 'JNI DETECTED ERROR IN APPLICATION: JNI FindClass called with pending exception java.lang.UnsatisfiedLinkError: dlopen failed: library "/data/data/com.rockstargames.gtasa/lib/libsamp.so" not found
+12-05 15:40:46.253  6149  6193 F ro.samp.mobile: java_vm_ext.cc:579] JNI DETECTED ERROR IN APPLICATION: JNI FindClass called with pending exception java.lang.UnsatisfiedLinkError: dlopen failed: library "/data/data/com.rockstargames.gtasa/lib/libsamp.so" not found
+12-05 15:40:46.400  6149  6193 F ro.samp.mobile: runtime.cc:669] Pending exception java.lang.UnsatisfiedLinkError: dlopen failed: library "/data/data/com.rockstargames.gtasa/lib/libsamp.so" not found
+12-05 15:40:46.400  6149  6193 F ro.samp.mobile: runtime.cc:677] JNI DETECTED ERROR IN APPLICATION: JNI FindClass called with pending exception java.lang.UnsatisfiedLinkError: dlopen failed: library "/data/data/com.rockstargames.gtasa/lib/libsamp.so" not found
+12-05 15:40:46.400  6149  6193 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 6193 (Thread-3), pid 6149 (ro.samp.mobile)
+12-05 15:40:46.736  6202  6202 W unwind  : Failed to initialize DEX file support: dlopen failed: library "libdexfile.so" not found
+12-05 15:40:47.005  6202  6202 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+12-05 15:40:47.005  6202  6202 F DEBUG   : Abort message: 'JNI DETECTED ERROR IN APPLICATION: JNI FindClass called with pending exception java.lang.UnsatisfiedLinkError: dlopen failed: library "/data/data/com.rockstargames.gtasa/lib/libsamp.so" not found
+12-05 16:04:56.307 17599 17599 W unwind  : Failed to initialize DEX file support: dlopen failed: library "libdexfile.so" not found

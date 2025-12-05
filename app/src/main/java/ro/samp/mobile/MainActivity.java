@@ -9,8 +9,7 @@ import android.widget.Toast;
 public class MainActivity extends Activity {
 
     private EditText edtHost, edtPort, edtNick;
-    private Button btnSave, btnPlay;
-
+    private Button btnPlay;
     private SAMP samp;
 
     @Override
@@ -18,63 +17,32 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // UI references
         edtHost = findViewById(R.id.edtHost);
         edtPort = findViewById(R.id.edtPort);
         edtNick = findViewById(R.id.edtNick);
-        btnSave = findViewById(R.id.btnSave);
         btnPlay = findViewById(R.id.btnPlay);
 
-        samp = new SAMP(); // initialize instance, but don't load libraries yet
+        samp = new SAMP();
 
-        // Save settings button
-        /*btnSave.setOnClickListener(v -> {
-            String host = edtHost.getText().toString();
-            String portText = edtPort.getText().toString();
-            String nick = edtNick.getText().toString();
-
-            if (host.isEmpty() || portText.isEmpty() || nick.isEmpty()) {
-                Toast.makeText(this, "Please fill all fields!", Toast.LENGTH_SHORT).show();
-                return;
-            }
-
-            int port;
-            try {
-                port = Integer.parseInt(portText);
-            } catch (NumberFormatException e) {
-                Toast.makeText(this, "Port must be a number!", Toast.LENGTH_SHORT).show();
-                return;
-            }
-
-            samp.saveSettings(host, port, nick);
-            Toast.makeText(this, "Settings saved!", Toast.LENGTH_SHORT).show();
-        });*/
-
-        // Play button
         btnPlay.setOnClickListener(v -> {
             btnPlay.setEnabled(false);
             Toast.makeText(this, "Starting SAMP...", Toast.LENGTH_SHORT).show();
 
             new Thread(() -> {
                 try {
-                    // Load libraries when Play is pressed
-                    SAMP.loadLibraries();
+                    // Load libraries and pass app path
+                    SAMP.loadLibraries(getFilesDir().getAbsolutePath());
 
                     // Start SAMP
                     samp.startSAMP();
 
-                    runOnUiThread(() ->
+                    runOnUiThread(() -> 
                         Toast.makeText(this, "SAMP started!", Toast.LENGTH_SHORT).show()
                     );
                 } catch (UnsatisfiedLinkError e) {
                     e.printStackTrace();
-                    runOnUiThread(() ->
+                    runOnUiThread(() -> 
                         Toast.makeText(this, "Failed to load libraries!", Toast.LENGTH_LONG).show()
-                    );
-                } catch (Exception e) {
-                    e.printStackTrace();
-                    runOnUiThread(() ->
-                        Toast.makeText(this, "Failed to start SAMP!", Toast.LENGTH_LONG).show()
                     );
                 } finally {
                     runOnUiThread(() -> btnPlay.setEnabled(true));
