@@ -8,7 +8,7 @@ public class SAMP {
     public native void startSAMP();
     public native void saveSettings(String host, int port, String nickname);
 
-    // Load libraries manually (static now)
+    // Load libraries only when needed
     public static void loadLibraries() throws UnsatisfiedLinkError {
         if (!loaded) {
             System.loadLibrary("GTASA"); // load first

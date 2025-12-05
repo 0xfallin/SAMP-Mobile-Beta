@@ -18,17 +18,16 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Load native libraries safely (static call)
-        SAMP.loadLibraries();
-
+        // UI references
         edtHost = findViewById(R.id.edtHost);
         edtPort = findViewById(R.id.edtPort);
         edtNick = findViewById(R.id.edtNick);
         btnSave = findViewById(R.id.btnSave);
         btnPlay = findViewById(R.id.btnPlay);
 
-        samp = new SAMP(); // safe now, libraries already loaded
+        samp = new SAMP(); // initialize instance, but don't load libraries yet
 
+        // Save settings button
         btnSave.setOnClickListener(v -> {
             String host = edtHost.getText().toString();
             String portText = edtPort.getText().toString();
@@ -51,16 +50,26 @@ public class MainActivity extends Activity {
             Toast.makeText(this, "Settings saved!", Toast.LENGTH_SHORT).show();
         });
 
+        // Play button
         btnPlay.setOnClickListener(v -> {
             btnPlay.setEnabled(false);
             Toast.makeText(this, "Starting SAMP...", Toast.LENGTH_SHORT).show();
 
             new Thread(() -> {
                 try {
-                    samp.startSAMP(); // libraries already loaded
+                    // Load libraries when Play is pressed
+                    SAMP.loadLibraries();
+
+                    // Start SAMP
+                    samp.startSAMP();
 
                     runOnUiThread(() ->
                         Toast.makeText(this, "SAMP started!", Toast.LENGTH_SHORT).show()
+                    );
+                } catch (UnsatisfiedLinkError e) {
+                    e.printStackTrace();
+                    runOnUiThread(() ->
+                        Toast.makeText(this, "Failed to load libraries!", Toast.LENGTH_LONG).show()
                     );
                 } catch (Exception e) {
                     e.printStackTrace();
