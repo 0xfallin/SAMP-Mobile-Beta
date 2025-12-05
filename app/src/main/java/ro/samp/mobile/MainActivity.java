@@ -9,14 +9,16 @@ import android.widget.Toast;
 public class MainActivity extends Activity {
 
     static {
-        System.loadLibrary("GTASA");
-        System.loadLibrary("samp");
+        try {
+            System.loadLibrary("GTASA");
+            System.loadLibrary("samp");
+        } catch (UnsatisfiedLinkError e) {
+            e.printStackTrace();
+        }
     }
 
-    // Start SAMP using settings.ini
+    // Native methods
     public native void startSAMP();
-
-    // Save settings to settings.ini
     public native void saveSettings(String host, int port, String nickname);
 
     private EditText edtHost, edtPort, edtNick;
@@ -33,35 +35,45 @@ public class MainActivity extends Activity {
         btnSave = findViewById(R.id.btnSave);
         btnPlay = findViewById(R.id.btnPlay);
 
-        // Save settings to settings.ini
+        // Save settings button
         btnSave.setOnClickListener(v -> {
             String host = edtHost.getText().toString();
-            int port = Integer.parseInt(edtPort.getText().toString());
+            String portText = edtPort.getText().toString();
             String nick = edtNick.getText().toString();
 
-            saveSettings(host, port, nick);
+            if (host.isEmpty() || portText.isEmpty() || nick.isEmpty()) {
+                Toast.makeText(this, "Please fill all fields!", Toast.LENGTH_SHORT).show();
+                return;
+            }
 
-            // Optional: show feedback
+            int port;
+            try {
+                port = Integer.parseInt(portText);
+            } catch (NumberFormatException e) {
+                Toast.makeText(this, "Port must be a number!", Toast.LENGTH_SHORT).show();
+                return;
+            }
+
+            saveSettings(host, port, nick);
             Toast.makeText(this, "Settings saved!", Toast.LENGTH_SHORT).show();
         });
 
-        // Start SAMP using saved settings
+        // Play button to start SAMP
         btnPlay.setOnClickListener(v -> {
             btnPlay.setEnabled(false); // prevent multiple clicks
+            Toast.makeText(this, "Starting SAMP...", Toast.LENGTH_SHORT).show();
 
             new Thread(() -> {
                 try {
-                    startSAMP(); // heavy C++ initialization
+                    startSAMP(); // call native code
 
-                    // Optionally notify UI thread when ready
-                    runOnUiThread(() -> 
-                        Toast.makeText(this, "SAMP initialized!", Toast.LENGTH_SHORT).show()
+                    runOnUiThread(() ->
+                        Toast.makeText(this, "SAMP started!", Toast.LENGTH_SHORT).show()
                     );
-
                 } catch (Exception e) {
                     e.printStackTrace();
-                    runOnUiThread(() -> 
-                        Toast.makeText(this, "Failed to start SAMP!", Toast.LENGTH_SHORT).show()
+                    runOnUiThread(() ->
+                        Toast.makeText(this, "Failed to start SAMP!", Toast.LENGTH_LONG).show()
                     );
                 } finally {
                     runOnUiThread(() -> btnPlay.setEnabled(true));
