@@ -35,8 +35,13 @@ android {
     }
     
     packagingOptions {
-        jniLibs {
-            useLegacyPackaging = true // avoid stripping issues
+        jniLibs.excludes += ['META-INF/*']
+        resources.excludes += ['META-INF/*']
+    }
+    
+    sourceSets {
+        main {
+            jniLibs.srcDir 'jniLibs'
         }
     }
     
@@ -54,8 +59,17 @@ repositories {
 }
 
 dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    // implementation 'com.google.android.material:material:1.12.0'
     implementation 'androidx.core:core-ktx:1.12.0'
     implementation 'androidx.appcompat:appcompat:1.7.1'
     implementation 'com.google.android.material:material:1.11.0'
+
+    implementation 'org.ini4j:ini4j:0.5.4'
+
+    // ShadowHook
+    implementation 'com.bytedance.android:shadowhook:1.0.10'
     // ... other dependencies
+    implementation 'org.apache.commons:commons-lang3:3.0'
+    implementation 'pub.devrel:easypermissions:3.0.0'
 }
