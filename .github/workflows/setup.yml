@@ -14,52 +14,16 @@ jobs:
     steps:
       # 1. Checkout the repo
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
 
       # 2. Set up JDK 17
-      - name: Set up JDK 17
+      - name: Set up JDK
         uses: actions/setup-java@v3
         with:
           distribution: temurin
           java-version: 17
 
-      # 3. Setup Android SDK (Essential for Gradle)
-      - name: Set up Android SDK
-        uses: android-actions/setup-android@v3
-
-      # 4. Setup NDK r16b (Fixed Indentation)
-      - name: Download and Setup Android NDK r16b
-        uses: nttld/setup-ndk@v1
-        with:
-          ndk-version: r16b
-
-      # ✨ FIX: Install the missing legacy library
-      - name: Install NDK r16b Dependencies (libncurses5)
-      run: |
-        sudo apt-get update
-        # 1. Try installing libncurses5-dev (often works on newer runners)
-        sudo apt-get install -y libncurses5-dev || true
-        # 2. If the above fails, install the core ncurses library and its development files
-        sudo apt-get install -y libncurses6 libtinfo5
-        
-        # 3. Handle the 'libncurses.so.5' symlink issue (most critical for older NDKs)
-        # This manually ensures the old 'libncurses.so.5' file exists for the NDK toolchain to find.
-        if [ ! -f /usr/lib/x86_64-linux-gnu/libtinfo.so.5 ]; then
-            sudo ln -s /lib/x86_64-linux-gnu/libtinfo.so.6 /usr/lib/x86_64-linux-gnu/libtinfo.so.5
-        fi
-        if [ ! -f /usr/lib/x86_64-linux-gnu/libncurses.so.5 ]; then
-            sudo ln -s /usr/lib/x86_64-linux-gnu/libncurses.so.6 /usr/lib/x86_64-linux-gnu/libncurses.so.5
-        fi
-
-      # 5. Run ndk-build (Fixed Indentation)
-      - name: Run ndk-build (r16b Toolchain)
-        # Note: Ensure the paths here are correct relative to your checkout root
-        run: |
-          ndk-build NDK_PROJECT_PATH=./app/src/main/cpp/samp/jni \
-            APP_BUILD_SCRIPT=./app/src/main/cpp/samp/jni/Android.mk \
-            NDK_APPLICATION_MK=./app/src/main/cpp/samp/jni/Application.mk
-
-      # 6. Cache Gradle dependencies
+      # 3. Cache Gradle dependencies
       - name: Cache Gradle packages
         uses: actions/cache@v3
         with:
@@ -69,17 +33,16 @@ jobs:
           key: gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
           restore-keys: |
             gradle-
-      
-      # 7. Set Permission to gradlew
+    
+      # 4. Set Permission to gradlew
       - name: Make Gradle Wrapper executable
         run: chmod +x ./gradlew
 
-      # 8. Run Gradle build
+      # 5. Run Gradle build
       - name: Build APK
-        # Gradle will automatically find the NDK path because it was set in step 4
-        run: ./gradlew clean :app:assembleDebug
+        run: ./gradlew assembleDebug --no-daemon
 
-      # 9. Upload APK as artifact
+      # 6. Upload APK as artifact
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
