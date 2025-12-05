@@ -54,11 +54,13 @@ public class MainActivity extends Activity {
         btnPlay.setOnClickListener(v -> {
             btnPlay.setEnabled(false);
             Toast.makeText(this, "Starting SAMP...", Toast.LENGTH_SHORT).show();
-
+        
             new Thread(() -> {
                 try {
-                    samp.startSAMP(); // call native code safely
-
+                    // Load native libraries on button click
+                    samp.loadLibraries();
+                    samp.startSAMP();
+        
                     runOnUiThread(() ->
                         Toast.makeText(this, "SAMP started!", Toast.LENGTH_SHORT).show()
                     );
