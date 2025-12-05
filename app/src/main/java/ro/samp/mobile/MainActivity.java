@@ -18,7 +18,7 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Load native libraries safely
+        // Load native libraries safely (static call)
         SAMP.loadLibraries();
 
         edtHost = findViewById(R.id.edtHost);
@@ -54,13 +54,11 @@ public class MainActivity extends Activity {
         btnPlay.setOnClickListener(v -> {
             btnPlay.setEnabled(false);
             Toast.makeText(this, "Starting SAMP...", Toast.LENGTH_SHORT).show();
-        
+
             new Thread(() -> {
                 try {
-                    // Load native libraries on button click
-                    samp.loadLibraries();
-                    samp.startSAMP();
-        
+                    samp.startSAMP(); // libraries already loaded
+
                     runOnUiThread(() ->
                         Toast.makeText(this, "SAMP started!", Toast.LENGTH_SHORT).show()
                     );
