@@ -125,35 +125,29 @@
 12-05 14:34:22.692 26064 26109 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 26109 (Thread-3), pid 26064 (ro.samp.mobile)
 12-05 14:34:23.200 26114 26114 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
 12-05 14:34:23.200 26114 26114 F DEBUG   : Abort message: 'JNI DETECTED ERROR IN APPLICATION: JNI FindClass called with pending exception java.lang.UnsatisfiedLinkError: dlopen failed: library "/data/data/com.rockstargames.gtasa/lib/libsamp.so" not found
-12-05 14:53:07.073 31850 31903 F ro.samp.mobile: java_vm_ext.cc:579] JNI DETECTED ERROR IN APPLICATION: JNI FindClass called with pending exception java.lang.UnsatisfiedLinkError: dlopen failed: library "/data/data/com.rockstargames.gtasa/lib/libsamp.so" not found
-12-05 14:53:07.236 31850 31903 F ro.samp.mobile: runtime.cc:669] Pending exception java.lang.UnsatisfiedLinkError: dlopen failed: library "/data/data/com.rockstargames.gtasa/lib/libsamp.so" not found
-12-05 14:53:07.236 31850 31903 F ro.samp.mobile: runtime.cc:677] JNI DETECTED ERROR IN APPLICATION: JNI FindClass called with pending exception java.lang.UnsatisfiedLinkError: dlopen failed: library "/data/data/com.rockstargames.gtasa/lib/libsamp.so" not found
 12-05 14:53:07.236 31850 31903 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 31903 (Thread-3), pid 31850 (ro.samp.mobile)
-12-05 14:53:07.509 31909 31909 W unwind  : Failed to initialize DEX file support: dlopen failed: library "libdexfile.so" not found
 12-05 14:53:07.735 31909 31909 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
 12-05 14:53:07.735 31909 31909 F DEBUG   : Abort message: 'JNI DETECTED ERROR IN APPLICATION: JNI FindClass called with pending exception java.lang.UnsatisfiedLinkError: dlopen failed: library "/data/data/com.rockstargames.gtasa/lib/libsamp.so" not found
-12-05 15:40:46.253  6149  6193 F ro.samp.mobile: java_vm_ext.cc:579] JNI DETECTED ERROR IN APPLICATION: JNI FindClass called with pending exception java.lang.UnsatisfiedLinkError: dlopen failed: library "/data/data/com.rockstargames.gtasa/lib/libsamp.so" not found
-12-05 15:40:46.400  6149  6193 F ro.samp.mobile: runtime.cc:669] Pending exception java.lang.UnsatisfiedLinkError: dlopen failed: library "/data/data/com.rockstargames.gtasa/lib/libsamp.so" not found
-12-05 15:40:46.400  6149  6193 F ro.samp.mobile: runtime.cc:677] JNI DETECTED ERROR IN APPLICATION: JNI FindClass called with pending exception java.lang.UnsatisfiedLinkError: dlopen failed: library "/data/data/com.rockstargames.gtasa/lib/libsamp.so" not found
 12-05 15:40:46.400  6149  6193 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 6193 (Thread-3), pid 6149 (ro.samp.mobile)
-12-05 15:40:46.736  6202  6202 W unwind  : Failed to initialize DEX file support: dlopen failed: library "libdexfile.so" not found
 12-05 15:40:47.005  6202  6202 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
 12-05 15:40:47.005  6202  6202 F DEBUG   : Abort message: 'JNI DETECTED ERROR IN APPLICATION: JNI FindClass called with pending exception java.lang.UnsatisfiedLinkError: dlopen failed: library "/data/data/com.rockstargames.gtasa/lib/libsamp.so" not found
-12-05 16:04:56.307 17599 17599 W unwind  : Failed to initialize DEX file support: dlopen failed: library "libdexfile.so" not found
-12-05 16:16:51.439 21451 21501 F ro.samp.mobile: java_vm_ext.cc:579] JNI DETECTED ERROR IN APPLICATION: JNI FindClass called with pending exception java.lang.UnsatisfiedLinkError: dlopen failed: library "/data/data/com.rockstargames.gtasa/lib/libsamp.so" not found
-12-05 16:16:51.610 21451 21501 F ro.samp.mobile: runtime.cc:669] Pending exception java.lang.UnsatisfiedLinkError: dlopen failed: library "/data/data/com.rockstargames.gtasa/lib/libsamp.so" not found
-12-05 16:16:51.610 21451 21501 F ro.samp.mobile: runtime.cc:677] JNI DETECTED ERROR IN APPLICATION: JNI FindClass called with pending exception java.lang.UnsatisfiedLinkError: dlopen failed: library "/data/data/com.rockstargames.gtasa/lib/libsamp.so" not found
 12-05 16:16:51.610 21451 21501 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 21501 (Thread-3), pid 21451 (ro.samp.mobile)
-12-05 16:16:51.918 21506 21506 W unwind  : Failed to initialize DEX file support: dlopen failed: library "libdexfile.so" not found
 12-05 16:16:52.151 21506 21506 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
 12-05 16:16:52.151 21506 21506 F DEBUG   : Abort message: 'JNI DETECTED ERROR IN APPLICATION: JNI FindClass called with pending exception java.lang.UnsatisfiedLinkError: dlopen failed: library "/data/data/com.rockstargames.gtasa/lib/libsamp.so" not found
-12-05 18:37:28.228 25222  3844 E CAM_SaliencyChecker: can't loadLibrary, dlopen failed: library "libmialgo_ai_vision.so" not found: needed by /vendor/app-link/priv-app/MiuiCamera/MiuiCamera.apk!/lib/arm64-v8a/libmialgo_saliency.so in namespace classloader-namespace-shared
-12-05 19:34:34.115  9897 11105 E CAM_SaliencyChecker: can't loadLibrary, dlopen failed: library "libmialgo_ai_vision.so" not found: needed by /vendor/app-link/priv-app/MiuiCamera/MiuiCamera.apk!/lib/arm64-v8a/libmialgo_saliency.so in namespace classloader-namespace-shared
-12-05 20:40:13.007 25548 26905 I libaudiotapper.loader: dlopen failure, falling back to stub
 12-05 20:45:25.870 13290 29425 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 29425 (NDK MediaCodec_), pid 13290 (.android.camera)
-12-05 20:45:26.241 29444 29444 W unwind  : Failed to initialize DEX file support: dlopen failed: library "libdexfile.so" not found
 12-05 20:45:26.672 29444 29444 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
-12-05 20:45:31.727 29527 29577 E CAM_SaliencyChecker: can't loadLibrary, dlopen failed: library "libmialgo_ai_vision.so" not found: needed by /vendor/app-link/priv-app/MiuiCamera/MiuiCamera.apk!/lib/arm64-v8a/libmialgo_saliency.so in namespace classloader-namespace-shared
-12-05 21:12:37.306 10760 10760 W unwind  : Failed to initialize DEX file support: dlopen failed: library "libdexfile.so" not found
-12-05 21:12:39.698 10778 10778 W unwind  : Failed to initialize DEX file support: dlopen failed: library "libdexfile.so" not found
 12-05 21:12:42.592 10271 10271 E AndroidRuntime: FATAL EXCEPTION: main
+12-05 22:50:30.073 20783 20783 F ro.samp.mobile: java_vm_ext.cc:579] JNI DETECTED ERROR IN APPLICATION: JNI FindClass called with pending exception java.lang.UnsatisfiedLinkError: dlopen failed: library "/data/data/com.rockstargames.gtasa/lib/libsamp.so" not found
+12-05 22:50:30.189 20783 20783 F ro.samp.mobile: runtime.cc:669] Pending exception java.lang.UnsatisfiedLinkError: dlopen failed: library "/data/data/com.rockstargames.gtasa/lib/libsamp.so" not found
+12-05 22:50:30.189 20783 20783 F ro.samp.mobile: runtime.cc:677] JNI DETECTED ERROR IN APPLICATION: JNI FindClass called with pending exception java.lang.UnsatisfiedLinkError: dlopen failed: library "/data/data/com.rockstargames.gtasa/lib/libsamp.so" not found
+12-05 22:50:30.189 20783 20783 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 20783 (ro.samp.mobile), pid 20783 (ro.samp.mobile)
+12-05 22:50:30.514 20868 20868 W unwind  : Failed to initialize DEX file support: dlopen failed: library "libdexfile.so" not found
+12-05 22:50:30.758 20868 20868 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+12-05 22:50:30.758 20868 20868 F DEBUG   : Abort message: 'JNI DETECTED ERROR IN APPLICATION: JNI FindClass called with pending exception java.lang.UnsatisfiedLinkError: dlopen failed: library "/data/data/com.rockstargames.gtasa/lib/libsamp.so" not found
+12-05 22:51:20.328 21298 21298 F ro.samp.mobile: java_vm_ext.cc:579] JNI DETECTED ERROR IN APPLICATION: JNI FindClass called with pending exception java.lang.UnsatisfiedLinkError: dlopen failed: library "/data/data/com.rockstargames.gtasa/lib/libsamp.so" not found
+12-05 22:51:20.423 21298 21298 F ro.samp.mobile: runtime.cc:669] Pending exception java.lang.UnsatisfiedLinkError: dlopen failed: library "/data/data/com.rockstargames.gtasa/lib/libsamp.so" not found
+12-05 22:51:20.423 21298 21298 F ro.samp.mobile: runtime.cc:677] JNI DETECTED ERROR IN APPLICATION: JNI FindClass called with pending exception java.lang.UnsatisfiedLinkError: dlopen failed: library "/data/data/com.rockstargames.gtasa/lib/libsamp.so" not found
+12-05 22:51:20.425 21298 21298 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 21298 (ro.samp.mobile), pid 21298 (ro.samp.mobile)
+12-05 22:51:20.643 21336 21336 W unwind  : Failed to initialize DEX file support: dlopen failed: library "libdexfile.so" not found
+12-05 22:51:20.771 21336 21336 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+12-05 22:51:20.772 21336 21336 F DEBUG   : Abort message: 'JNI DETECTED ERROR IN APPLICATION: JNI FindClass called with pending exception java.lang.UnsatisfiedLinkError: dlopen failed: library "/data/data/com.rockstargames.gtasa/lib/libsamp.so" not found
