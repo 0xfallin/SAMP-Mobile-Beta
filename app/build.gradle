@@ -22,10 +22,22 @@ android {
     buildTypes {
         debug {
             minifyEnabled false 
+            ndk {
+                debugSymbolLevel 'NONE'
+            }
         }
         release {
             minifyEnabled true
+            ndk {
+                debugSymbolLevel 'NONE'
+            }
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    
+    packagingOptions {
+        jniLibs {
+            useLegacyPackaging = true // avoid stripping issues
         }
     }
     

@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends Activity {
 
@@ -39,11 +40,33 @@ public class MainActivity extends Activity {
             String nick = edtNick.getText().toString();
 
             saveSettings(host, port, nick);
+
+            // Optional: show feedback
+            Toast.makeText(this, "Settings saved!", Toast.LENGTH_SHORT).show();
         });
 
         // Start SAMP using saved settings
         btnPlay.setOnClickListener(v -> {
-            new Thread(() -> startSAMP()).start();
+            btnPlay.setEnabled(false); // prevent multiple clicks
+
+            new Thread(() -> {
+                try {
+                    startSAMP(); // heavy C++ initialization
+
+                    // Optionally notify UI thread when ready
+                    runOnUiThread(() -> 
+                        Toast.makeText(this, "SAMP initialized!", Toast.LENGTH_SHORT).show()
+                    );
+
+                } catch (Exception e) {
+                    e.printStackTrace();
+                    runOnUiThread(() -> 
+                        Toast.makeText(this, "Failed to start SAMP!", Toast.LENGTH_SHORT).show()
+                    );
+                } finally {
+                    runOnUiThread(() -> btnPlay.setEnabled(true));
+                }
+            }).start();
         });
     }
 }
