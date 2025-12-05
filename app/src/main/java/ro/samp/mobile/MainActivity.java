@@ -28,7 +28,7 @@ public class MainActivity extends Activity {
         samp = new SAMP(); // initialize instance, but don't load libraries yet
 
         // Save settings button
-        btnSave.setOnClickListener(v -> {
+        /*btnSave.setOnClickListener(v -> {
             String host = edtHost.getText().toString();
             String portText = edtPort.getText().toString();
             String nick = edtNick.getText().toString();
@@ -48,7 +48,7 @@ public class MainActivity extends Activity {
 
             samp.saveSettings(host, port, nick);
             Toast.makeText(this, "Settings saved!", Toast.LENGTH_SHORT).show();
-        });
+        });*/
 
         // Play button
         btnPlay.setOnClickListener(v -> {

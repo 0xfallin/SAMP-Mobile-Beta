@@ -4,22 +4,14 @@ public class SAMP {
 
     private static boolean loaded = false;
 
-    // Native methods
     public native void startSAMP();
     public native void saveSettings(String host, int port, String nickname);
 
-    // Load libraries only when needed
-    public static void loadLibraries() throws UnsatisfiedLinkError {
+    public static void loadLibraries() {
         if (!loaded) {
-            System.loadLibrary("GTASA"); // load first
-            System.loadLibrary("samp");  // load second
+            System.loadLibrary("GTASA");
+            System.loadLibrary("samp");
             loaded = true;
         }
-    }
-
-    // Convenience method
-    public void startWithSettings(String host, int port, String nickname) {
-        saveSettings(host, port, nickname);
-        startSAMP();
     }
 }
