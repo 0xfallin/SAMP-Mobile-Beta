@@ -18,13 +18,16 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // Load native libraries safely
+        SAMP.loadLibraries();
+
         edtHost = findViewById(R.id.edtHost);
         edtPort = findViewById(R.id.edtPort);
         edtNick = findViewById(R.id.edtNick);
         btnSave = findViewById(R.id.btnSave);
         btnPlay = findViewById(R.id.btnPlay);
 
-        samp = new SAMP(); // initialize SAMP instance
+        samp = new SAMP(); // safe now, libraries already loaded
 
         btnSave.setOnClickListener(v -> {
             String host = edtHost.getText().toString();
@@ -54,7 +57,7 @@ public class MainActivity extends Activity {
 
             new Thread(() -> {
                 try {
-                    samp.startSAMP(); // call native code
+                    samp.startSAMP(); // call native code safely
 
                     runOnUiThread(() ->
                         Toast.makeText(this, "SAMP started!", Toast.LENGTH_SHORT).show()
