@@ -35,11 +35,11 @@ android {
         }
     }
     
-    packagingOptions {
-        jniLibs {
-            useLegacyPackaging = true // avoid stripping issues
-        }
-    }
+    //packagingOptions {
+    //    jniLibs {
+    //        useLegacyPackaging = true // avoid stripping issues
+    //    }
+    //}
     
     // Java/Kotlin Compatibility
     compileOptions {
