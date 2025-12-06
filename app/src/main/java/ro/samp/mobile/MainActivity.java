@@ -52,11 +52,14 @@ public class MainActivity extends Activity {
             return;
         }
 
-        String storagePath = getFilesDir().getAbsolutePath() + "/samp/";
-        SAMP.loadLibraries(storagePath);
-        
-        // Initialize native libraries and storage paths
+        // Load native libraries (no storagePath needed)
+        SAMP.loadLibraries();
+
+        // Initialize native code
         samp.initNative();
+
+        // Start the SAMP main loop
+        samp.startSAMP();
 
         Toast.makeText(this, "Launching SAMP...", Toast.LENGTH_SHORT).show();
     }
