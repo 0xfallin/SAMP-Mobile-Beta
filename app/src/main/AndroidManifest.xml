@@ -61,6 +61,7 @@
 
         <activity
             android:name=".MainActivity"
+            android:screenOrientation="false"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -68,6 +69,11 @@
             </intent-filter>
         </activity>
         
+       <activity
+          android:name=".SAMPActivity"
+          android:screenOrientation="landscape"
+          android:exported="true" />
+ 
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="${applicationId}.provider"

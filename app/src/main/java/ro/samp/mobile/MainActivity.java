@@ -55,12 +55,10 @@ public class MainActivity extends Activity {
         // Load native libraries (no storagePath needed)
         SAMP.loadLibraries();
 
-        // Initialize native code
-        samp.initNative();
-
-        // Start the SAMP main loop
-        samp.startSAMP();
-
+        // Launch the landscape activity for SAMP
+        Intent intent = new Intent(this, SAMPActivity.class);
+        startActivity(intent);
+        
         Toast.makeText(this, "Launching SAMP...", Toast.LENGTH_SHORT).show();
     }
 
