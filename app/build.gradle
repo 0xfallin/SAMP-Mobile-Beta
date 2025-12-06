@@ -35,14 +35,8 @@ android {
     }
 
     packagingOptions {
+        jniLibs.useLegacyPackaging = true
         jniLibs.excludes += ['META-INF/*']
-        resources.excludes += ['META-INF/*']
-    }
-
-    sourceSets {
-        main {
-            jniLibs.srcDir 'jniLibs'
-        }
     }
 
     compileOptions {
