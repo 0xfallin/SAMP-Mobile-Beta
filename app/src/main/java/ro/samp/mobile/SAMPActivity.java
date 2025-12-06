@@ -19,9 +19,6 @@ public class SAMPActivity extends Activity {
         // Load native libraries only once
         SAMP.loadLibraries();
 
-        // Initialize native storage and game
-        samp.initNative();
-
         // Start the SAMP main loop
         samp.startSAMP();
     }
