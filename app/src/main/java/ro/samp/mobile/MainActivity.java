@@ -57,8 +57,6 @@ public class MainActivity extends Activity {
         
         // Initialize native libraries and storage paths
         samp.initNative();
-        
-        samp.startSAMP();
 
         Toast.makeText(this, "Launching SAMP...", Toast.LENGTH_SHORT).show();
     }

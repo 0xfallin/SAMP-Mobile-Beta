@@ -1,13 +1,7 @@
 package ro.samp.mobile;
 
 public class SAMP {
-
     private static boolean loaded = false;
-
-    public native void startSAMP();
-    public native void stopSAMP();
-    public native void setStoragePath(String path);
-
     public static void loadLibraries(String storagePath) {
         if (loaded) return;
 
@@ -22,4 +16,9 @@ public class SAMP {
 
         loaded = true;
     }
+
+    public native void startSAMP();
+    public native void stopSAMP();
+    public native void setStoragePath(String path);
+    public native void initNative();
 }
