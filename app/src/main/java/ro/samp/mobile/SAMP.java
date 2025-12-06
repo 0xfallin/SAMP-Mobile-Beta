@@ -5,11 +5,6 @@ public class SAMP {
     public static void loadLibraries(String storagePath) {
         if (loaded) return;
 
-        System.loadLibrary("GTASA");
-        System.loadLibrary("bass");
-        System.loadLibrary("ImmEmulator");
-        System.loadLibrary("touch");
-        System.loadLibrary("SCAnd");
         System.loadLibrary("samp");
 
         new SAMP().setStoragePath(storagePath);
