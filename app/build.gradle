@@ -4,13 +4,6 @@ plugins {
 
 android {
     namespace "ro.samp.mobile"
-    allprojects {
-      repositories {
-        maven { 
-          url 'https://maven.aliyun.com/repository/jcenter' 
-        }
-      }
-    }
     compileSdkVersion 34
 
     defaultConfig {
@@ -51,6 +44,11 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+}
+
+repositories {
+    google()
+    mavenCentral()
 }
 
 dependencies {

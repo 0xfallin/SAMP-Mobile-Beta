@@ -1,10 +1,6 @@
 // Top-level build.gradle (Root)
 buildscript {
-    repositories {
-        google()
-        mavenCentral()
-        maven { url 'https://artifacts.applovin.com/android' }
-    }
+    
     dependencies {
         classpath 'com.android.tools.build:gradle:8.9.0'
     }
@@ -12,11 +8,7 @@ buildscript {
 
 allprojects {
     repositories {
-        mavenCentral()
-        maven { url 'https://jitpack.io' }
-        maven { url 'https://mint.splunk.com/gradle/'}
-        maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
         google()
-        jcenter()
+        mavenCentral()
     }
 }
