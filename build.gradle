@@ -1,6 +1,10 @@
 // Top-level build.gradle (Root)
 buildscript {
-    
+    repositories {
+        google()
+        jcenter()
+        maven { url 'https://artifacts.applovin.com/android' }
+    }
     dependencies {
         classpath 'com.android.tools.build:gradle:8.4.0'
     }
