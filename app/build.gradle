@@ -4,6 +4,13 @@ plugins {
 
 android {
     namespace "ro.samp.mobile"
+    allprojects {
+      repositories {
+        maven { 
+          url 'https://maven.aliyun.com/repository/jcenter' 
+        }
+      }
+    }
     compileSdkVersion 34
 
     defaultConfig {
@@ -34,13 +41,6 @@ android {
         }
     }
 
-    allprojects {
-      repositories {
-        maven { 
-          url 'https://maven.aliyun.com/repository/jcenter' 
-        }
-      }
-    }
 
     packagingOptions {
         jniLibs.useLegacyPackaging = true
