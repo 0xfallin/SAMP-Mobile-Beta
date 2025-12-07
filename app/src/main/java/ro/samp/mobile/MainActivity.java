@@ -52,10 +52,6 @@ public class MainActivity extends Activity {
             Toast.makeText(this, "Fill all fields", Toast.LENGTH_SHORT).show();
             return;
         }
-
-        // Load native libraries (no storagePath needed)
-        SAMP.loadLibraries();
-
         // Launch the landscape activity for SAMP
         Intent intent = new Intent(this, SAMPActivity.class);
         startActivity(intent);
