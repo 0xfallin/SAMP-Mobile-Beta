@@ -53,7 +53,7 @@ public class MainActivity extends Activity {
             return;
         }
         // Launch the landscape activity for SAMP
-        Intent intent = new Intent(this, SAMPActivity.class);
+        Intent intent = new Intent(this, SAMP.class);
         startActivity(intent);
         
         Toast.makeText(this, "Launching SAMP...", Toast.LENGTH_SHORT).show();
